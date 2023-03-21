@@ -14,3 +14,9 @@ export interface IProduct {
     stock: number;
     _id: number;
   }
+
+export interface ICartProduct extends IProduct {
+    selectedSize?: string;
+    cartQuantity: number
+
+  }

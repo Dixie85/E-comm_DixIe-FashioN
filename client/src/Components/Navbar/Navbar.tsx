@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/Images/Logo12.png";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import NavLinks from "./NavLinks";
 import IonIcon from '@reacticons/ionicons';
 import Cart from "../Cart/Cart";
@@ -33,9 +33,10 @@ const Navbar = () => {
         </ul>
 
         <div className="relative group text-3xl md:block hidden" onClick={(e) => console.log(e)}>
-          <div className=" flex lg:mr-16 bg-red-200/60 text-black/50  px-10 py-3 rounded-full font-[josefin] items-center "><IonIcon className="" name={`cart-outline`}></IonIcon></div>
-        <Cart />
+          <div className=" flex lg:mr-16  text-black/70  px-10 py-3 rounded-full font-[josefin] items-center "><IonIcon name="bag-handle" /></div>
+          <Cart />
         </div>
+
 
 
         {/* Mobile nav */}

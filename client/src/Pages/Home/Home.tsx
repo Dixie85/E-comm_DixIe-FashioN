@@ -20,7 +20,7 @@ const Home = () => {
         </h1>
       </article>
       <article>
-        <div className='hidden sm:grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-4'>{sales.map(s => <Card key={s.name} product={s}/> )}</div>
+        <div className='hidden sm:grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-4'>{sales.map(s => <Card key={s._id} product={s}/> )}</div>
       </article>
 
     </section>

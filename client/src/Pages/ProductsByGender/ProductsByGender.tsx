@@ -35,11 +35,11 @@ const ProductsByGender = () => {
       <div className="mt-10 max-w-[1220px]">
         <div className="p-5 md:py-7 md:mx-12 md:shadow-xl md:border md:border-gray-100/50 md:rounded-xl md:bg-gray-100/60">
           <h2 className="pb-2 text-3xl font-medium">Sneak peek to some of our ON SALE products</h2>
-          <div className="grid grid-cols-3 gap-16 px-10 mt-4">{productsOnSale.map(product => <Card key={product.name} product={product} />).slice(0, 3)}</div>
+          <div className="grid grid-cols-3 gap-16 px-10 mt-4">{productsOnSale.map(product => <Card key={product._id} product={product} />).slice(0, 3)}</div>
         </div>
         <div className="p-5 md:py-7 md:m-7 md:shadow-xl md:border md:border-gray-100/50 md:rounded-xl md:bg-gray-100/60">
           <h2 className="my-7 pb-2 text-3xl font-medium ">The best look anytime anywhere</h2>
-          <div className="grid grid-cols-4 gap-4 mt-">{productsRegularPrice.map(product => <Card key={product.name} product={product} />)}</div>
+          <div className="grid grid-cols-4 gap-4 mt-">{productsRegularPrice.map(product => <Card key={product._id} product={product} />)}</div>
         </div>
       </div>
     </section>
