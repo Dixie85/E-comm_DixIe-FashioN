@@ -9,10 +9,11 @@ import { getAllProducts } from "./controllers/controller";
 import { errorHandler } from './middleware/errorHandler';
 import auth from './routes/authRoutes';
 import user from './routes/userRoutes';
+import corsOptions from './config/corsOptions';
 
 const app: Application = express();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser())

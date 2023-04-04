@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/Images/Logo12.png";
 // import Button from "../Button/Button";
 import NavLinks from "./NavLinks";
 import IonIcon from '@reacticons/ionicons';
 import Cart from "../Cart/Cart";
+import UserDropMenu from "../UserDropMenu/UserDropMenu";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   return (
-    <nav className=" fixed top-0 bg-white w-screen shadow-md z-50">
+    <nav className=" fixed top-0 bg-white w-screen shadow-md z-40">
       <div className="flex items-center font-medium justify-between">
-        <div className="z-50 p-4 md:w-auto w-full flex justify-between">
+        <div className="z-40 p-4 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="h-9 lg:ml-8" />
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             <IonIcon name={`${open ? "close" : "menu"}`}></IonIcon>
@@ -32,11 +34,18 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="relative group text-3xl md:block hidden" onClick={(e) => console.log(e)}>
-          <div className=" flex lg:mr-16  text-black/70  px-10 py-3 rounded-full font-[josefin] items-center "><IonIcon name="bag-handle" /></div>
-          <Cart />
+        <div className="flex text-3xl items-center text-black/70">
+          <button className=" flex group lg:mr-0 text-4xl text-black/70  pl-3 pr-10 py-3 rounded-full font-[josefin] items-center justify-center">
+            <IonIcon name="person-circle-outline" />
+            <UserDropMenu />
+          </button> 
+          <div className=" group  md:block hidden">
+            <button className=" flex lg:mr-0 text-4xl text-black/70  pl-3 pr-10 py-3 rounded-full font-[josefin] items-center">
+              <IonIcon name="bag-handle" />
+            </button>
+            <Cart />
+          </div>
         </div>
-
 
 
         {/* Mobile nav */}
