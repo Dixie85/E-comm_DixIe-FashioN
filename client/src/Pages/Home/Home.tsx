@@ -4,7 +4,6 @@ import { useAppSelector } from '../../redux/redux.hooks';
 const Home = () => {
   const products = useAppSelector(({ products }) => products.products);
   const sales = products.filter(pro => pro.sale).slice(1,5);
-  console.log(sales)
   return (
     <section>
       <article className="relative h-screen bg-Hero bg-cover

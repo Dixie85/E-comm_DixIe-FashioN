@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks';
-import { addTocart } from '../../redux/slices/cart/cartSlice';
+import { addTocart, selectCurrentCart } from '../../redux/slices/cart/cartSlice';
 // import Button from '../Button/Button';
 import ButtonSizes from '../Button/ButtonSizes';
 
@@ -9,7 +9,7 @@ const DescriptionCard = () => {
   const { id } = useParams()
   const products = useAppSelector(({ products }) => products.products);
   const displayProduct = products.find(pro => pro._id === Number(id))
-  const { cart } = useAppSelector(state => state.cart)
+  const { cart } = useAppSelector(selectCurrentCart)
   const [inCart, setInCArt] = useState(false)
   const navigate = useNavigate()
   const dispatch = useAppDispatch()

@@ -16,7 +16,7 @@ const CartItem = ({pro}: ICartItem ) => {
       <img src={pro.image} alt={pro.name} className="pr-1 w-[70px] max-h-24 rounded-3xl" />
       <div className='flex flex-1 flex-col px-1'>
         <div>{pro.name}</div>
-        <div>{'size:'} {pro.stock}</div>
+        <div>{'stock:'} {pro.stock}</div>
         <div className='flex mt-auto'>
           <button
             // disabled={disabled && true}

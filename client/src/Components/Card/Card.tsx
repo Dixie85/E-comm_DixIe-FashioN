@@ -2,7 +2,7 @@ import eye from '../../Assets/Images/eye-fill.svg'
 import { IProduct } from '../../Interfaces/Interfaces'
 import { useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks'
-import { addTocart } from '../../redux/slices/cart/cartSlice'
+import { addTocart, selectCurrentCart } from '../../redux/slices/cart/cartSlice'
 import { useEffect, useState } from 'react'
 
 interface ICard {
@@ -10,7 +10,7 @@ interface ICard {
 }
 
 const Card = ({product}:ICard) => {
-  const { cart } = useAppSelector(state => state.cart)
+  const { cart } = useAppSelector(selectCurrentCart)
   const [inCart, setInCArt] = useState(false)
   const navigate = useNavigate()
   const dispatch = useAppDispatch()

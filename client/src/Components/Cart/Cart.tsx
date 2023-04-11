@@ -1,32 +1,27 @@
 import IonIcon from '@reacticons/ionicons'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks'
 import { selectCurrentToken } from '../../redux/slices/auth/authSlice'
 import { isLoginOpen } from '../../redux/slices/auth/loginSlice'
+import { selectCurrentCart } from '../../redux/slices/cart/cartSlice'
 import CartItem from './CartItem'
-// import Button from '../Button/Button'
 
 const Cart = () => {
-  const { cart } = useAppSelector(state => state.cart)
+  const { cart, shipping, total } = useAppSelector(selectCurrentCart)
   const token = useAppSelector(selectCurrentToken)
   const [cartEmpty, setCartEmpty] = useState(false)
   const authToken = !!token
-  // console.log(authToken)
   const isDisebled = (cart.length > 0 && authToken)
-  console.log({ isDisebled: isDisebled });
-  console.log({ productInCart: cart.length > 0 });
-  console.log({ authToken });
-  console.log({ cartLenght: cart.length });
-  console.log({ token });
+  console.log(cart);
 
   const dispatch = useAppDispatch()
-
-  const total = () => cart.reduce((tot, pro) => tot += pro.price * pro.cartQuantity, 0).toFixed(2)
+  const navigate = useNavigate()
 
   const handleCheckoutBth = () => {
     if(!authToken) dispatch(isLoginOpen(true))
-    if(isDisebled) console.log("To the Checkout")
     if(cart.length < 1) setCartEmpty(true)  
+    if(isDisebled) navigate('/checkout')
   }
 
   useEffect(()=>{
@@ -44,7 +39,7 @@ const Cart = () => {
             <h3 className='mr-2'>Items in your bag</h3>
             <IonIcon name="bag-handle" className='text-xl' />
           </span>
-          {+total() > 70 && <span className='text-base text-center p-0.5 mb-3 -mt-2 text-danger '>YAY! YOU HAVE QUALIFIED FOR <span className='font-semibold'>FREE SHIPPING</span> WHITIN THE COUNTRY</span>}
+          {total > 70 && <span className='text-base text-center p-0.5 mb-3 -mt-2 text-danger '>YAY! YOU HAVE QUALIFIED FOR <span className='font-semibold'>FREE SHIPPING</span> WHITIN THE COUNTRY</span>}
         </div>
 
         <div className='pt-1'></div>
@@ -60,11 +55,11 @@ const Cart = () => {
         <div className='flex flex-col pb-1 border-t mt-auto '>
           <div className='flex p-1.5 justify-between'>
             <span className=''>Total:</span>
-            <span className=''>{total()} €</span>
+            <span className=''>{total} €</span>
           </div>
           <div className='flex p-1.5 justify-between'>
             <span className=''>Shipping:</span>
-            <span className=''>{+total() > 70 ? "Free" : 5.99} €</span>
+            <span className=''>{shipping} €</span>
           </div>
           <button
             title={`${authToken ? `Checkout` : 'Login to unlock'}`}

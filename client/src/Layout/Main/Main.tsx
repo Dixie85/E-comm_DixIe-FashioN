@@ -10,14 +10,12 @@ import ProductsByCategory from "../../Pages/ProductsByCategory/ProductsByCategor
 import ProductsByGender from "../../Pages/ProductsByGender/ProductsByGender";
 import ProductsSale from "../../Pages/ProductsSale/ProductsSale";
 import UserProfile from "../../Pages/UserProfile/UserProfile";
-import { useAppDispatch, useAppSelector } from "../../redux/redux.hooks";
+import { useAppDispatch } from "../../redux/redux.hooks";
 import { fetchProducts } from "../../redux/slices/productSlice/productsSlice";
 
 
 const Main = () => {
   const dispatch = useAppDispatch();
-  const products = useAppSelector(({ products }) => products.products);
-  console.log(products, 'loging the products from MAIN');
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -32,7 +30,7 @@ const Main = () => {
           <Route path="/:gender" element={<ProductsByGender />} />
           <Route path="/products/:gender/:category" element={<ProductsByCategory />} />
           <Route path="/sale" element={<ProductsSale />} />
-          <Route path="/test" element={<Checkout />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/*" element={<Page404 />} />
         {/* </Route> */}
