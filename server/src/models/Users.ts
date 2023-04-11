@@ -14,11 +14,10 @@ const userSchema = new Schema<IUser>({
     type: String,
     required: true,
   },
-  roles: 
-    {
-      type: String,
-      default: "User",
-    },
+  roles: {
+    type: String,
+    default: "User",
+  },
 });
 
 export const Users = model<IUser>("user", userSchema);

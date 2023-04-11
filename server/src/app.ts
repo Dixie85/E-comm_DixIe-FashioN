@@ -10,6 +10,8 @@ import { errorHandler } from './middleware/errorHandler';
 import auth from './routes/authRoutes';
 import user from './routes/userRoutes';
 import corsOptions from './config/corsOptions';
+import order from './routes/orderRoutes';
+import product from './routes/productRoutes';
 
 const app: Application = express();
 
@@ -22,6 +24,8 @@ app.use(express.static("db"));
 app.get("/api/products", getAllProducts);
 app.use("/auth", auth);
 app.use("/user", user);
+app.use("/order", order);
+app.use("/product", product);
 
 app.use(errorHandler);
 
