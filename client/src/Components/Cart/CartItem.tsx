@@ -2,20 +2,22 @@ import IonIcon from "@reacticons/ionicons"
 import { ICartProduct } from "../../Interfaces/Interfaces"
 import { useAppDispatch } from "../../redux/redux.hooks"
 import { addQuantity, removeFromCart, subtractQuantity } from "../../redux/slices/cart/cartSlice"
+import SizeQuantitySelector from "../SizeQuantitySelector/SizeQuantitySelector"
 
-interface ICartItem{
-  pro:ICartProduct
+interface ICartItem {
+  pro: ICartProduct
 }
 
-const CartItem = ({pro}: ICartItem ) => {
+const CartItem = ({ pro }: ICartItem) => {
+  
 
   const dispatch = useAppDispatch()
 
   return (
-    <article  className='flex px-2 py-5 border-b'>
+    <article className='flex px-2 py-5 border-b'>
       <img src={pro.image} alt={pro.name} className="pr-1 w-[70px] max-h-24 rounded-3xl" />
       <div className='flex flex-1 flex-col px-1'>
-        <div>{pro.name}</div>
+        <p>{pro.name}</p>
         <div>{'stock:'} {pro.stock}</div>
         <div className='flex mt-auto'>
           <button
@@ -36,6 +38,7 @@ const CartItem = ({pro}: ICartItem ) => {
             +
           </button>
         </div>
+        <SizeQuantitySelector sizes={pro.size}/>
       </div>
       <div className="flex pr-1 flex-col justify-between items-end">
         <button

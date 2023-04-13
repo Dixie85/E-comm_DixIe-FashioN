@@ -4,7 +4,7 @@ import LogoutBtn from '../../features/auth/LogoutBtn'
 import RegisterBtn from '../../features/auth/RegisterBtn'
 import { useAppSelector } from '../../redux/redux.hooks'
 import { selectCurrentToken } from '../../redux/slices/auth/authSlice'
-import UserProfileBtn from '../UserProfileBtn/UserProfileBtn'
+import UserProfileBtn from '../Buttons/UserProfileBtn'
 
 const UserDropMenu = () => {
   const authToken = useAppSelector(selectCurrentToken)

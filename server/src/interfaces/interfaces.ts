@@ -14,7 +14,7 @@ export interface IProductSizes {
 //Product Interface
 export interface IProduct {
   brand: string;
-  cartQuantity?: number;
+  cartQuantity?: IProductSizes;
   category: string;
   description: string;
   discountPrice: number | null;

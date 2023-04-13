@@ -1,9 +1,9 @@
+import IonIcon from '@reacticons/ionicons';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks';
 import { addTocart, selectCurrentCart } from '../../redux/slices/cart/cartSlice';
-// import Button from '../Button/Button';
-import ButtonSizes from '../Button/ButtonSizes';
+import ProductSizeIcon from '../ProductSizeIcon/ProductSizeIcon';
 
 const DescriptionCard = () => {
   const { id } = useParams()
@@ -13,6 +13,7 @@ const DescriptionCard = () => {
   const [inCart, setInCArt] = useState(false)
   const navigate = useNavigate()
   const dispatch = useAppDispatch()
+  console.log(displayProduct)
 
   useEffect(() => {
     setInCArt(cart.some(pro => pro._id === displayProduct!._id))
@@ -40,14 +41,24 @@ const DescriptionCard = () => {
             <h2 className=' mb-1 text-2xl font-medium text-danger'>{displayProduct?.name}</h2>
             <div className='text-lg'><i>{displayProduct?.price} €</i></div>
             <p className='my-10'>{displayProduct?.description}</p>
-            <span className='mb-2 block'>Avalible sizes</span>
-            <div className='mb-8 flex '>
-              {displayProduct?.size.map(siz => <ButtonSizes key={siz} size={siz} />)}
+            <div className='mb-8'>
+              <div className='flex items-center'>
+                <p className='mb-2 mr-2'>Avalible sizes</p>
+                <span className='relative  group'>
+                  <IonIcon name={'information-circle-outline'} className='text-2xl cursor-pointer' />
+                  <div className='absolute hidden w-56 p-2 bottom-1 left-6 text-sm bg-black/60 text-gray-100 rounded-md group-hover:block'>
+                  Available sizes are displayed here. To choose a size add product in the basket and go to the checkout.
+                  </div>
+                </span>
+              </div>
+              <div className='mb-8 flex'>
+                {Object.entries(displayProduct!.size).map(siz => Number(siz[1]) > 0 && <ProductSizeIcon key={siz[0]} size={siz[0]} />)}
+              </div>
             </div>
             {/* <Button text='  ADD TO CART' /> */}
             <button
               disabled={inCart}
-              className={`bg-red-200 text-black/50 px-6 py-2 rounded-full transform duration-300 hover:bg-danger hover:text-white font-[josefin] ${inCart ? 'cursor-not-allowed bg-gray-300/80 hover:bg-gray-400/90 active:bg-gray-500' : 'bg-white'}`}
+              className={`bg-red-100 text-black/50 px-6 py-2 rounded-full transform duration-300 hover:bg-red-200/90 hover:text-white font-[josefin] active:bg-rose-400/90 ${inCart ? 'cursor-not-allowed bg-gray-300/80 hover:bg-gray-400/90 active:bg-gray-500' : 'bg-white'}`}
               onClick={addToCartFailSafe}
             > {inCart ? 'IN BAG' : 'ADD TO BAG'}
             </button>

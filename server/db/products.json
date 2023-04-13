@@ -1,5 +1,5 @@
 {
-  "count": 71,
+  "count": 70,
   "results": [
     {
       "_id": 1,
@@ -9,11 +9,10 @@
       "brand": "Yahwen Yiren",
       "gender": "female",
       "sale": true,
-      "stock": 5,
-      "discountPrice": 15.05,
-      "size": ["s", "m", "l"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 30,
+      "size": {"s":10, "m":10, "l":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 2,
@@ -23,11 +22,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": false,
-      "stock": null,
-      "discountPrice": null,
-      "size": ["xs", "s", "m"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1580991584164-a4e12c31521d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 30,
+      "size": {"xs":10, "s":10, "m":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1580991584164-a4e12c31521d?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 3,
@@ -37,11 +35,10 @@
       "brand": "Zadig & Voltaire",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 12,
-      "size": ["xs", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      "stock": 30,
+      "size": {"xs":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     },
     {
       "_id": 4,
@@ -51,11 +48,10 @@
       "brand": "Vince",
       "gender": "female",
       "sale": true,
-      "discountPrice": 14.05,
-      "stock": 3,
-      "size": ["xs", "s", "l"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1527628271016-d588989ff264?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 30,
+      "size": {"xs":10, "s":10, "l":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1527628271016-d588989ff264?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 5,
@@ -65,11 +61,10 @@
       "brand": "Vince",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": null,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1533399710066-c33de66fe6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1533399710066-c33de66fe6bb?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 6,
@@ -79,11 +74,10 @@
       "brand": "Yahwen Yiren",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
       "_id": 7,
@@ -93,11 +87,10 @@
       "brand": "Vogue",
       "gender": "female",
       "sale": true,
-      "discountPrice": 45.99,
-      "stock": 15,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1610142991820-e02266a4a9f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1610142991820-e02266a4a9f0?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 8,
@@ -107,11 +100,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 4,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1605406575497-015ab0d21b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1605406575497-015ab0d21b9b?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 9,
@@ -121,11 +113,10 @@
       "brand": "Yahwen Yiren",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": null,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1594743794748-b6b721775767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1594743794748-b6b721775767?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 10,
@@ -135,11 +126,10 @@
       "brand": "Zadig & Voltaire",
       "gender": "female",
       "sale": true,
-      "discountPrice": 15.55,
-      "stock": 6,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1541130292430-a832637ddc0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=795&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1541130292430-a832637ddc0d?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=795&q=80"
     },
     {
       "_id": 11,
@@ -149,11 +139,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "stock": 5,
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1555085506-82b8d30d8380?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1555085506-82b8d30d8380?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 12,
@@ -163,11 +152,10 @@
       "brand": "Vogue",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1618585182794-984d23d0356d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=664&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1618585182794-984d23d0356d?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=664&q=80"
     },
     {
       "_id": 13,
@@ -177,11 +165,10 @@
       "brand": "Vince",
       "gender": "female",
       "sale": true,
-      "discountPrice": 15.55,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1636393915073-331bea6a6397?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1636393915073-331bea6a6397?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 14,
@@ -191,25 +178,23 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1568732939097-b949d8c03cc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1568732939097-b949d8c03cc1?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
-      "_id": 15,
+      "_id":15,
       "price": 20.99,
       "category": "blouses",
-      "name": "Red mid length sleeve blouse",
+      "name": "Red m_id length sleeve blouse",
       "brand": "Vince",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1611619827687-5287ee05ac44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1611619827687-5287ee05ac44?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 16,
@@ -219,11 +204,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": true,
-      "discountPrice": 15.55,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1589359096049-85292b87bf51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1589359096049-85292b87bf51?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 17,
@@ -233,11 +217,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1589697547048-962940abc062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1589697547048-962940abc062?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 18,
@@ -247,11 +230,10 @@
       "brand": "Vince",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1617608587196-6391433fb6a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1617608587196-6391433fb6a3?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 19,
@@ -261,11 +243,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": true,
-      "discountPrice": 18.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1523304571269-0629d1a9da7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1523304571269-0629d1a9da7b?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 20,
@@ -275,11 +256,10 @@
       "brand": "Bershka",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
     },
     {
       "_id": 21,
@@ -289,11 +269,10 @@
       "brand": "Vince",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1574722772581-f4a4e07e147b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=653&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1574722772581-f4a4e07e147b?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=653&q=80"
     },
     {
       "_id": 22,
@@ -303,11 +282,10 @@
       "brand": "Vince",
       "gender": "female",
       "sale": true,
-      "discountPrice": 20.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1520097356425-7dce6e63784a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1520097356425-7dce6e63784a?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
     },
     {
       "_id": 23,
@@ -317,11 +295,10 @@
       "brand": "Yahwen Yiren",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1515168615949-8ca9ed2e3fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1515168615949-8ca9ed2e3fe1?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     },
     {
       "_id": 24,
@@ -331,11 +308,10 @@
       "brand": "Yahwen Yiren",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1461935793258-ac2ac2c930b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1461935793258-ac2ac2c930b2?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 25,
@@ -345,11 +321,10 @@
       "brand": "Zadig & Voltaire",
       "gender": "female",
       "sale": true,
-      "discountPrice": 16.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 26,
@@ -359,11 +334,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 27,
@@ -373,11 +347,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": null,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1507081323647-4d250478b919?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
     },
     {
       "_id": 28,
@@ -387,11 +360,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": true,
-      "discountPrice": 8.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
     },
     {
       "_id": 29,
@@ -401,11 +373,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1595412406323-7a49ef5eceeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1595412406323-7a49ef5eceeb?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 30,
@@ -415,11 +386,10 @@
       "brand": "Yahwen Yiren",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1517191297489-48c463380e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1517191297489-48c463380e8f?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 31,
@@ -429,11 +399,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": true,
-      "discountPrice": 16.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1536303158031-c868b371399f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1536303158031-c868b371399f?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
     },
     {
       "_id": 32,
@@ -443,11 +412,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1542847957-80a6beffcbde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1542847957-80a6beffcbde?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
     },
     {
       "_id": 33,
@@ -457,11 +425,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1527698719334-d2cef360d0d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1527698719334-d2cef360d0d4?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
     },
     {
       "_id": 34,
@@ -471,11 +438,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": true,
-      "discountPrice": 19.55,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1542216538-9c86c34d8f41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1542216538-9c86c34d8f41?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 35,
@@ -485,11 +451,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1519750404508-1928be0f2e1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1519750404508-1928be0f2e1c?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 36,
@@ -499,11 +464,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1488371934083-edb7857977df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=680&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1488371934083-edb7857977df?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=680&q=80"
     },
     {
       "_id": 37,
@@ -513,11 +477,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": true,
-      "discountPrice": 19.55,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1440606797942-6cc04c045447?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1440606797942-6cc04c045447?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
     },
     {
       "_id": 38,
@@ -527,11 +490,10 @@
       "brand": "Zadig & Voltaire",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1642265291606-65b6d1442af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1642265291606-65b6d1442af9?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
     },
     {
       "_id": 39,
@@ -541,11 +503,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1520975954732-35dd22299614?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1520975954732-35dd22299614?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 40,
@@ -555,11 +516,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": true,
-      "discountPrice": 29.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1507038732509-8b1a9623223a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1507038732509-8b1a9623223a?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 41,
@@ -569,11 +529,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1555583743-991174c11425?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1555583743-991174c11425?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 42,
@@ -583,11 +542,10 @@
       "brand": "Yahwen Yiren",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/flagged/photo-1557603602-0a2be7422d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/flagged/photo-1557603602-0a2be7422d80?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
     },
     {
       "_id": 43,
@@ -597,11 +555,10 @@
       "brand": "Zadig & Voltairence",
       "gender": "male",
       "sale": true,
-      "discountPrice": 21.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1583883773608-6b2bcee72242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1583883773608-6b2bcee72242?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     },
     {
       "_id": 44,
@@ -611,11 +568,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 45,
@@ -625,11 +581,10 @@
       "brand": "Bershka",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1632440740724-d204d16b607d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1632440740724-d204d16b607d?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "_id": 46,
@@ -639,11 +594,10 @@
       "brand": "Vince",
       "gender": "male",
       "sale": true,
-      "discountPrice": 18.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1631086960281-4590ca88dcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=704&q=80"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1631086960281-4590ca88dcd6?ixlib=rb-1.2.1&ix_id=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=704&q=80"
     },
     {
       "_id": 47,
@@ -653,11 +607,10 @@
       "brand": "Polo Ralph Lauren",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjI0ODE1NTAz&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjI0ODE1NTAz&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
       "_id": 48,
@@ -667,11 +620,10 @@
       "brand": "Everlane",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIzMTYxOTEy&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIzMTYxOTEy&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
       "_id": 49,
@@ -681,11 +633,10 @@
       "brand": "Lyra",
       "gender": "female",
       "sale": true,
-      "discountPrice": 24.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1551854838-212c50b4c184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MzA2OTIzNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1551854838-212c50b4c184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MzA2OTIzNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
       "_id": 50,
@@ -695,11 +646,10 @@
       "brand": "C&A",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
       "_id": 51,
@@ -709,11 +659,10 @@
       "brand": "Bonobos",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1584865288642-42078afe6942?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjU4MzE5OA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1584865288642-42078afe6942?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjU4MzE5OA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
       "_id": 52,
@@ -723,11 +672,10 @@
       "brand": "ArmyWear",
       "gender": "male",
       "sale": true,
-      "discountPrice": 27.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1548883354-7622d03aca27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2MzEzMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1548883354-7622d03aca27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2MzEzMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
       "_id": 53,
@@ -737,11 +685,10 @@
       "brand": "Nike",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1580906853305-5702e648164e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjI2MzEwOQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1580906853305-5702e648164e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjI2MzEwOQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
       "_id": 54,
@@ -751,11 +698,10 @@
       "brand": "Salvatore Piccolo",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1620138996011-943081eb5a10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2MzQxMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1620138996011-943081eb5a10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2MzQxMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
       "_id": 55,
@@ -765,11 +711,10 @@
       "brand": "Sunspel",
       "gender": "female",
       "sale": true,
-      "discountPrice": 9.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIzMTYxMDAz&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIzMTYxMDAz&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
       "_id": 56,
@@ -779,11 +724,10 @@
       "brand": "Wahts",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1598522325074-042db73aa4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2NjExNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1598522325074-042db73aa4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2NjExNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
       "_id": 57,
@@ -793,194 +737,180 @@
       "brand": "Wahts",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1585145197082-dba095ba01ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1585145197082-dba095ba01ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
-      "_id": 59,
+      "_id": 58,
       "price": 20.55,
       "category": "shorts",
       "name": "High Waisted Shorts Jeans",
       "brand": "Levi's",
       "gender": "female",
       "sale": true,
-      "discountPrice": 16.55,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1585145197502-8f36802f0a26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIzNjA4Mjgx&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1585145197502-8f36802f0a26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIzNjA4Mjgx&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
-      "_id": 60,
+      "_id": 59,
       "price": 15.55,
       "category": "shorts",
       "name": "Men's New Sports Shorts",
       "brand": "Braun Johns",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1617953644310-e690da9be982?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MTkxNjU4Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1617953644310-e690da9be982?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MTkxNjU4Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 61,
+      "_id": 60,
       "price": 20.99,
       "category": "shorts",
       "name": "Men's Summer 2022 Sports",
       "brand": "Stephen Rays",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1602132664379-dd392de2854e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2ODMyNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1602132664379-dd392de2854e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2ODMyNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 62,
+      "_id": 61,
       "price": 30.55,
       "category": "shorts",
       "name": "Men's Red 2022",
       "brand": "H&M",
       "gender": "male",
       "sale": true,
-      "discountPrice": 25.55,
-      "stock": 56,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1617952236317-0bd127407984?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MjQ3MTMyOA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1617952236317-0bd127407984?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MjQ3MTMyOA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 63,
+      "_id": 62,
       "price": 50.99,
       "category": "shorts",
       "name": "Men Denim",
       "brand": "Levi's",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 53,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1637076552649-19f7e87bf6ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2ODY0OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1637076552649-19f7e87bf6ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE2ODY0OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
   
     {
-      "_id": 64,
+      "_id": 63,
       "price": 60.55,
       "category": "jeans",
       "name": "Men's Denim",
       "brand": "Levi's",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 52,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NDAwMTQyMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NDAwMTQyMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 65,
+      "_id": 64,
       "price": 40.99,
       "category": "jeans",
       "name": "DenimJeans 2022",
       "brand": "Everlane",
       "gender": "male",
       "sale": true,
-      "discountPrice": 35.55,
-      "stock": 3,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1511105612320-2e62a04dd044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NDUwNDcxMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1511105612320-2e62a04dd044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NDUwNDcxMA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 66,
+      "_id": 65,
       "price": 80.55,
       "category": "jeans",
       "name": "Levi’s Wedgie Straight Jeans",
       "brand": "Levi's",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 35,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1458119516396-015721b6d60a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3MjYzOQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1458119516396-015721b6d60a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3MjYzOQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 67,
+      "_id": 66,
       "price": 60.99,
       "category": "jeans",
       "name": "Calvin Klein Wedgie Jeans",
       "brand": "Calvin Klein",
       "gender": "female",
       "sale": false,
-      "discountPrice": null,
-      "stock": 25,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3MjY4Mg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3MjY4Mg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 68,
+      "_id": 67,
       "price": 120.99,
       "category": "jeans",
       "name": "Madewell Jeans",
       "brand": "Madewell",
       "gender": "female",
       "sale": true,
-      "discountPrice": 99.99,
-      "stock": 5,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1639674386626-d50e2f122807?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3Mjg0Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1639674386626-d50e2f122807?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3Mjg0Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 69,
+      "_id": 68,
       "price": 120.55,
       "category": "jeans",
       "name": "AG Adriano Goldschmied 2021 Jeans",
       "brand": "Goldschmied",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 15,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1648301558657-b55db298200a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NTgwOTc0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1648301558657-b55db298200a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NTgwOTc0Nw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     },
     {
-      "_id": 70,
+      "_id": 69,
       "price": 30.55,
       "category": "jeans",
       "name": "Rag & Bone Autumn",
       "brand": "Rag & Bone",
       "gender": "male",
       "sale": false,
-      "discountPrice": null,
-      "stock": 25,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1511105043137-7e66f28270e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjE4NzY0MDM2&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1511105043137-7e66f28270e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjE4NzY0MDM2&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
     },
     {
-      "_id": 71,
+      "_id": 70,
       "price": 50.99,
       "category": "jeans",
       "name": "Cotton Men's Jeans Denim Pants",
       "brand": "Wrangler",
       "gender": "male",
       "sale": true,
-      "discountPrice": 40.99,
-      "stock": 15,
-      "size": ["xs", "s", "m", "l", "xl"],
-      "description": "Designed for the jet-setter in mind, our shirt is the ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
-      "image": "https://images.unsplash.com/photo-1557982048-4f395f739895?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3MzM2NA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+      "stock": 50,
+      "size": {"xs":10, "s":10, "m":10, "l":10, "xl":10},
+      "description": "Designed for the jet-setter in mind, our shirt is the _ideal blend of comfort and style. Built for the man who’s in demand, this classic design will keep you looking presentable on the go, with a gentle fabric for all-day comfort. Because you won’t perform at your best if you’re irritated by your clothing. Our shirt is a sleek take on a well-loved classic featuring a tried-and-tested spread collar and a slim fit styling.",
+      "image": "https://images.unsplash.com/photo-1557982048-4f395f739895?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ix_id=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NDE3MzM2NA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
     }
-  ]
+  ]  
 }
