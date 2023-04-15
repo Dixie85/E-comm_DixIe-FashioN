@@ -39,7 +39,7 @@ const Navbar = () => {
             <IonIcon name="person-circle-outline" />
             <UserDropMenu />
           </button> 
-          <div className=" group  md:block hidden">
+          <div className=" group/cart  md:block hidden">
             <button className=" flex lg:mr-0 text-4xl text-black/70  pl-3 pr-10 py-3 rounded-full font-[josefin] items-center">
               <IonIcon name="bag-handle" />
             </button>

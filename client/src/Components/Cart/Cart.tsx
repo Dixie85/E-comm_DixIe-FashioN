@@ -30,8 +30,8 @@ const Cart = () => {
   },[cart])
 
   return (
-    <section className='absolute hidden p-2.5 md:block -top-0 right-[-400px] h-screen w-96  group-hover:right-0 duration-500 bg-rose-50 shadow-2xl border-l border-gray-50'>
-      {/* <section className='absolute  p-2.5 md:block -top-0 right-0 h-screen w-96  group-hover:right-1 duration-500 bg-rose-50 shadow-2xl border-l border-gray-50'> */}
+    <section className='absolute hidden p-2.5 md:block -top-0 right-[-400px] h-screen w-96  group-hover/cart:right-0 duration-500 bg-rose-50 shadow-2xl border-l border-gray-50'>
+      {/* <section className='absolute  p-2.5 md:block -top-0 right-0 h-screen w-96  group-hover/cart:right-1 duration-500 bg-rose-50 shadow-2xl border-l border-gray-50'> */}
       <div className='flex flex-col h-full text-xl'>
 
         <div className='flex flex-col justify-between border-b'>
@@ -48,7 +48,7 @@ const Cart = () => {
           {cart.length < 1 && <span className='text-base text-center p-0.5 mt-3 text-black/70 '>Cart is empty</span>}
           {cartEmpty && <span className='text-base text-center p-0.5 mt-2 text-danger '>Your shopping bag is still empty</span>}
           {cart.map((pro) =>
-            <CartItem key={pro._id} pro={pro}/>
+            <CartItem key={pro._id} pro={pro} isCart={true}/>
           )}
         </div>
 

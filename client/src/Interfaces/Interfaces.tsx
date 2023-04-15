@@ -20,11 +20,10 @@ export interface IProduct {
   sale: boolean;
   size: ISizes;
   stock: number;
-  _id: number;
+  _id: string;
 }
 
 export interface ICartProduct extends IProduct {
-  selectedSize?: string;
-  cartQuantity: number
-
+  cartQuantity: ISizes
 }
+

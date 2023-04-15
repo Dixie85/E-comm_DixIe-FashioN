@@ -1,45 +1,39 @@
 import IonIcon from "@reacticons/ionicons"
 import { ICartProduct } from "../../Interfaces/Interfaces"
 import { useAppDispatch } from "../../redux/redux.hooks"
-import { addQuantity, removeFromCart, subtractQuantity } from "../../redux/slices/cart/cartSlice"
+import { removeFromCart } from "../../redux/slices/cart/cartSlice"
 import SizeQuantitySelector from "../SizeQuantitySelector/SizeQuantitySelector"
 
 interface ICartItem {
-  pro: ICartProduct
+  pro: ICartProduct,
+  isCart?: boolean
 }
 
-const CartItem = ({ pro }: ICartItem) => {
-  
+const CartItem = ({ pro, isCart }: ICartItem) => {
 
   const dispatch = useAppDispatch()
+
+  const sumCartQuantity = Object.values(pro.cartQuantity)
+    .reduce((res, quan): number => {
+      return res += quan
+    }, 0)
+
+  console.log({ sumCartQuantity });
+
 
   return (
     <article className='flex px-2 py-5 border-b'>
       <img src={pro.image} alt={pro.name} className="pr-1 w-[70px] max-h-24 rounded-3xl" />
-      <div className='flex flex-1 flex-col px-1'>
+      <div className='flex flex-1 flex-col px-1 justify-between'>
         <p>{pro.name}</p>
-        <div>{'stock:'} {pro.stock}</div>
-        <div className='flex mt-auto'>
-          <button
-            // disabled={disabled && true}
-            className={`w-8 h-8 border border-black/10 rounded ${pro.cartQuantity === 1 ? "cursor-authT-allowed bg-gray-300/80 hover:bg-gray-400/90 active:bg-gray-500" : "cursor-pointer bg-rose-300/60  hover:bg-rose-400/60 hover:text-white active:bg-rose-100/30 active:text-black"}`}
-            onClick={() => dispatch(subtractQuantity(pro))}
-          >
-            -
-          </button>
-          <span className='w-8 h-8 text-center'>
-            {pro.cartQuantity}
-          </span>
-          <button
-            // disabled={disabled && true}
-            className={`w-8 h-8 border border-black/10 rounded ${pro.cartQuantity === pro.stock ? "cursor-authT-allowed bg-gray-300/80 hover:bg-gray-400/90 active:bg-gray-500" : "cursor-pointer bg-rose-300/60  hover:bg-rose-400/60 hover:text-white active:bg-rose-100/30 active:text-black"}`}
-            onClick={() => dispatch(addQuantity(pro))}
-          >
-            +
-          </button>
-        </div>
-        <SizeQuantitySelector sizes={pro.size}/>
+        {isCart && <p>Quantity: {sumCartQuantity} {sumCartQuantity === 0 && <span className="inline-flex text-base text-red-500">choose size <IonIcon name='warning-outline' className=" self-center"/></span>}</p>}
+        <SizeQuantitySelector sizes={pro.cartQuantity} id={pro._id} isCart={isCart} />
       </div>
+      {!isCart &&
+        <div className="pr-2 mr-2 border-r line-clamp-6">
+         <p className="leading-none text-sm text-gray-500/90"> Sizes in cart:</p>
+          {Object.entries(pro.cartQuantity).map(size => size[1] > 0 && <p key={size[0]} className='m-0 leading-none'>{`${size[0].toUpperCase()}: ${size[1]}`}</p>)}
+        </div>}
       <div className="flex pr-1 flex-col justify-between items-end">
         <button
           className='flex p-1 items-center rounded-full shadow-md bg-slate-50 hover:bg-red-400/70'
@@ -47,7 +41,7 @@ const CartItem = ({ pro }: ICartItem) => {
         >
           <IonIcon name="close-outline"></IonIcon>
         </button>
-        <div>{(pro.price * pro.cartQuantity).toFixed(2)} €</div>
+        <div className="text-base text-right">{(pro.price * sumCartQuantity).toFixed(2)} €</div>
       </div>
     </article>
   )
