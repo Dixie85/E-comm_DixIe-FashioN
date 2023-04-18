@@ -27,3 +27,14 @@ export interface ICartProduct extends IProduct {
   cartQuantity: ISizes
 }
 
+export interface IDecodedUserInfo {
+  roles: string,
+  userId: string,
+  username: string,
+}
+
+export interface IDecoded {
+  UserInfo: IDecodedUserInfo,
+  iat: string,
+  exp: string,
+}

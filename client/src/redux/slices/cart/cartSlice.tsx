@@ -102,12 +102,17 @@ export const cartSlice = createSlice({
       if (cartQuantity > 1) state.cart = newCart
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)
-    }
+    },
+    resetCart: (state) => {
+      state.cart = [...initialState.cart]
+      state.total = initialState.total
+      state.shipping = initialState.shipping
+    },
   },
 
 });
 
-export const { addTocart, removeFromCart, addQuantity, subtractQuantity } = cartSlice.actions;
+export const { addTocart, removeFromCart, addQuantity, subtractQuantity, resetCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
 

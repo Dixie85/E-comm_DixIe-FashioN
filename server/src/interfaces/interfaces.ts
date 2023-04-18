@@ -1,3 +1,5 @@
+import { ObjectId } from "mongoose";
+
 export interface IStatusError extends Error {
   status?: number;
 }
@@ -30,6 +32,7 @@ export interface IProduct {
 
 //User Interface
 export interface IUser {
+  _id?: ObjectId
   username: string;
   email: string;
   password: string;

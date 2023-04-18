@@ -116,19 +116,25 @@ export const shippedOrder = asyncHandler(async (req, res): Promise<any> => {
 // @route POST /order
 // @access Private
 export const newOrder = asyncHandler(async (req, res): Promise<any> => {
-  const { deliveryAddress, sum, userId, cart} = req.body;
-  console.log({cart});  
-
+  const { fullName ,deliveryAddress, sum, userId, cart } = req.body; // error
+  
+  //For testing !!!
+  // if (!error) { 
+  //   //created
+  //   return res.status(201).json({ message: `A confirmation and details about your order will arrive on your email shortly` });
+  // } else {
+  //   return res.status(400).json({ message: "Invalid user data received" });
+  // }
 
   // Confirm data
-  if (!deliveryAddress || !sum || !userId) {
+  if (!fullName || !deliveryAddress || !sum || !userId || !cart) {
     return res.status(400).json({ message: "Data is missing" });
   }
   
   // Update quantity of all products in the cart
   for( const pro of cart) {
     let stock = 0;
-    const sizesEntries = Object.entries(pro.sizes as IProductSizes)
+    const sizesEntries = Object.entries(pro.cartQuantity as IProductSizes)
 
     const product = await connect(() => Product.findById(pro._id).select("-__v").exec())
 
@@ -137,7 +143,7 @@ export const newOrder = asyncHandler(async (req, res): Promise<any> => {
         const quantityCheck = product.size[s[0]] -= s[1]
         if(quantityCheck < 0) {
             close()
-            return res.status(400).json({ message: `Sonething went wrong ${product.name} is out of stock` })
+            return res.status(400).json({ message: `Sonething went wrong, ${product.name} is out of stock.` })
         }
         stock += quantityCheck
     }
@@ -160,8 +166,10 @@ export const newOrder = asyncHandler(async (req, res): Promise<any> => {
   const order = await connect(() => Order.create(orderObject));
   close();
   if (order) {
+    console.log(order, "order");
+    
     //created
-    res.status(201).json({ message: `A new order was made`, order });
+    res.status(201).json({ message: `A confirmation and details about your order will arrive on your email shortly` });
   } else {
     res.status(400).json({ message: "Invalid user data received" });
   }

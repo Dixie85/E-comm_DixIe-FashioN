@@ -18,9 +18,6 @@ const CartItem = ({ pro, isCart }: ICartItem) => {
       return res += quan
     }, 0)
 
-  console.log({ sumCartQuantity });
-
-
   return (
     <article className='flex px-2 py-5 border-b'>
       <img src={pro.image} alt={pro.name} className="pr-1 w-[70px] max-h-24 rounded-3xl" />
@@ -33,6 +30,7 @@ const CartItem = ({ pro, isCart }: ICartItem) => {
         <div className="pr-2 mr-2 border-r line-clamp-6">
          <p className="leading-none text-sm text-gray-500/90"> Sizes in cart:</p>
           {Object.entries(pro.cartQuantity).map(size => size[1] > 0 && <p key={size[0]} className='m-0 leading-none'>{`${size[0].toUpperCase()}: ${size[1]}`}</p>)}
+          {sumCartQuantity === 0 && <span className="inline-flex text-sm text-red-500">choose size <IonIcon name='warning-outline' className=" self-center"/></span>}
         </div>}
       <div className="flex pr-1 flex-col justify-between items-end">
         <button

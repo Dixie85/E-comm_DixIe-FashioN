@@ -14,7 +14,7 @@ const initialState: IProductsState = {
 export const fetchProducts = createAsyncThunk(
   "person/fetch",
   async (thunkAPI) => {
-    const response = await fetch("http://localhost:8080/api/products", {
+    const response = await fetch("http://localhost:8080/product", {
       method: "GET",
     });
     const data = response.json();    

@@ -5,6 +5,7 @@ import authReducer from "../redux/slices/auth/authSlice";
 import { apiSlice } from "./api/apiSlice";
 import loginSlice from "../redux/slices/auth/loginSlice";
 import registerSlice from "../redux/slices/auth/registerSlice";
+import checkoutMessageSlice from "../redux/slices/checkout/checkoutMessageSlice";
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     auth: authReducer,
     login: loginSlice,
     register: registerSlice,
+    checkoutMessage: checkoutMessageSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(apiSlice.middleware),

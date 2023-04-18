@@ -24,7 +24,7 @@ app.use(express.static("db"));
 app.get("/api/products", getAllProducts);
 app.use("/auth", auth);
 app.use("/user", user);
-app.use("/order", order);
+app.use("/api/order", order);
 app.use("/product", product);
 
 app.use(errorHandler);
