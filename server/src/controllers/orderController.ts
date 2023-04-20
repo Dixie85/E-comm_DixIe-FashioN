@@ -23,21 +23,39 @@ export const getAllPendingOrders = asyncHandler(async (_req, res): Promise<any> 
   res.json(pendingOrders);
 });
 
+// @desc Users orders by ID
+// @route GET /order/:id
+// @access Private
+export const getUserOrder = asyncHandler(async (req, res): Promise<any> => {
+  const {id} = req.params
+  // Get orders
+  const userOrders = await connect(() => Order.find({userRef: id }).sort({createdAt: -1}).select("-__v").lean().exec());
+  close();
+  
+//   If no orders
+  if (!userOrders?.length) {
+    return res.status(400).json({ message: "No orders found" });
+  }
+
+  res.json(userOrders);
+});
+
+
 
 // @desc Cancel order
 // @route PATCH /order/canceled
 // @access Private
 export const cancelOrder = asyncHandler(async (req, res): Promise<any> => {
-  const { orderNumber } = req.body;
+  const { _id } = req.body;
 
   // Confirm data
-  if (!orderNumber) {
+  if (!_id) {
     return res.status(400).json({ message: "Data is missing" });
   }
 
   // Find order and update status
   const findOrder = await connect(() =>
-    Order.updateOne({ orderNumber }, { status: "canceled" }).lean().exec()
+    Order.updateOne({ _id }, { status: "canceled" }).lean().exec()
   );
   close();
   console.log(findOrder);
@@ -46,7 +64,7 @@ export const cancelOrder = asyncHandler(async (req, res): Promise<any> => {
     //created
     res.status(201).json({ message: `Status changet to canceled` });
   } else {
-    res.status(404).json({ message: `Order number ${orderNumber} not found` });
+    res.status(404).json({ message: `Order number ${_id} not found` });
   }
 });
 

@@ -12,6 +12,8 @@ import ProductsSale from "../../Pages/ProductsSale/ProductsSale";
 import UserProfile from "../../Pages/UserProfile/UserProfile";
 import { useAppDispatch } from "../../redux/redux.hooks";
 import { fetchProducts } from "../../redux/slices/productSlice/productsSlice";
+import Orders from "../../Components/Oredrs/Orders";
+import UserInfo from "../../Components/UserInfo/UserInfo";
 
 
 const Main = () => {
@@ -25,14 +27,17 @@ const Main = () => {
     <main className="font-[jossefin]">
       <Routes>
         {/* <Route element={<PersistLogin />}> */}
-          <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<DescriptionCard />} />
-          <Route path="/:gender" element={<ProductsByGender />} />
-          <Route path="/products/:gender/:category" element={<ProductsByCategory />} />
-          <Route path="/sale" element={<ProductsSale />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/profile" element={<UserProfile />} />
-          <Route path="/*" element={<Page404 />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<DescriptionCard />} />
+        <Route path="/:gender" element={<ProductsByGender />} />
+        <Route path="/products/:gender/:category" element={<ProductsByCategory />} />
+        <Route path="/sale" element={<ProductsSale />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/profile" element={<UserProfile />} >
+          <Route path="/profile/orders" element={<Orders />} />
+          <Route path="/profile/userinfo" element={<UserInfo />} />
+        </Route>
+        <Route path="/*" element={<Page404 />} />
         {/* </Route> */}
       </Routes >
     </main>

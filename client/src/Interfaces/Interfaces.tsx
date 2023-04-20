@@ -38,3 +38,16 @@ export interface IDecoded {
   iat: string,
   exp: string,
 }
+
+//Order Interface
+export interface IOrder {
+  _id?: string
+  orderDate?: Date;
+  deliveryAddress?: string;
+  sum?: number;
+  status?: string;
+  userRef?: string;
+  orderNumber?: number;
+  createdAt?: string,
+  updatedAt?: string,
+}
