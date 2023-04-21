@@ -5,11 +5,12 @@ import { ISizes } from '../../Interfaces/Interfaces';
 import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks';
 import { addTocart, selectCurrentCart } from '../../redux/slices/cart/cartSlice';
 import ProductSizeIcon from '../ProductSizeIcon/ProductSizeIcon';
+import { useGetProductsQuery } from '../../features/products/productsApiSlice';
 
 const DescriptionCard = () => {
   const { id } = useParams()
-  const products = useAppSelector(({ products }) => products.products);
-  const displayProduct = products.find(pro => pro._id === id)
+  const { data:products } = useGetProductsQuery('')
+  const displayProduct = products!.find(pro => pro._id === id)
   const { cart } = useAppSelector(selectCurrentCart)
   const [inCart, setInCArt] = useState(false)
   const navigate = useNavigate()

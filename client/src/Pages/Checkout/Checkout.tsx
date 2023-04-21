@@ -3,12 +3,10 @@ import CartItem from "../../Components/Cart/CartItem"
 import { useAppDispatch, useAppSelector } from "../../redux/redux.hooks"
 import { resetCart, selectCurrentCart } from "../../redux/slices/cart/cartSlice"
 import { useState } from "react"
-import { selectCurrentToken } from "../../redux/slices/auth/authSlice"
-import jwt_decode from "jwt-decode";
-import { IDecoded } from "../../Interfaces/Interfaces"
 import { useAddNewOrderMutation } from "../../features/orders/ordersApiSlice"
 import { isCheckoutMessageOpen } from "../../redux/slices/checkout/checkoutMessageSlice"
 import { useNavigate } from "react-router-dom"
+import useTokenDecoder from "../../hooks/useTokenDecoder"
 
 const inputInitialState = {
   firstName: '',
@@ -19,12 +17,10 @@ const inputInitialState = {
 }
 
 const Checkout = () => {
-
-  const token = useAppSelector(selectCurrentToken) as string
   const { cart, shipping, total } = useAppSelector(selectCurrentCart)
   const [inputData, setInputData] = useState(inputInitialState)
   const totalWithOrNotShipping = total < 70 ? (total + Number(shipping)).toFixed(2) : total
-  const decoded = jwt_decode(token) as IDecoded
+  const { userId } = useTokenDecoder()
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
   const cartEmpty = cart.length < 1
@@ -35,7 +31,7 @@ const Checkout = () => {
     fullName: `${inputData.firstName} ${inputData.lastName} `,
     deliveryAddress: `${inputData.addresss} ${inputData.zipcode} ${inputData.city}`,
     sum: totalWithOrNotShipping,
-    userId: decoded.UserInfo.userId,
+    userId,
     shipping,
     cart,
     error: false // testing 
