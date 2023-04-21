@@ -1,17 +1,17 @@
 import { useState } from "react";
 import Card from "../../Components/Card/Card";
-import { useGetProductsQuery } from "../../features/products/productsApiSlice";
+import { useAppSelector } from "../../redux/redux.hooks";
 
 const ProductsSale = () => {
   const [filterByCategory, setFilterByCategory] = useState('all');
   const [filterByGender, setFilterByGender] = useState('female');
-  const { data:products } = useGetProductsQuery('')
-  const productsFilteredByGender = products!.filter(pro => filterByGender?.toLowerCase() === "female" ? pro.gender === "female" : pro.gender === "male")
+  const products = useAppSelector(({ products }) => products.products);
+  const productsFilteredByGender = products.filter(pro => filterByGender?.toLowerCase() === "female" ? pro.gender === "female" : pro.gender === "male")
   const productsFilteredByCategory = productsFilteredByGender.filter(pro => filterByCategory === 'all' ? pro : pro.category === filterByCategory && pro)
   const productsOnSale = productsFilteredByCategory.filter(product => product.sale)
 
   const categories =
-    products!
+    products
       .map(product => product.category)
       .reduce((arr, currentCategory): string[] => {
         if (arr.includes(currentCategory)) {

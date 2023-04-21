@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom"
 import Card from "../../Components/Card/Card";
-import { useGetProductsQuery } from "../../features/products/productsApiSlice";
+import { useAppSelector } from "../../redux/redux.hooks";
 
 const ProductsByCategory = () => {
   const { gender, category } = useParams();
-  const { data:products } = useGetProductsQuery('')
-  const productsFilteredByGender = products!.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
+  const products = useAppSelector(({ products }) => products.products);
+  const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
 
   const displayCategory =
     productsFilteredByGender

@@ -1,9 +1,9 @@
 import Card from '../../Components/Card/Card'
-import { useGetProductsQuery } from '../../features/products/productsApiSlice'
+import { useAppSelector } from '../../redux/redux.hooks';
 
 const Home = () => {
-  const { data:products } = useGetProductsQuery('')
-  const sales = products!.filter(pro => pro.sale).slice(1,5);
+  const products = useAppSelector(({ products }) => products.products);
+  const sales = products.filter(pro => pro.sale).slice(1,5);
   return (
     <section>
       <article className="relative h-screen bg-Hero bg-cover
