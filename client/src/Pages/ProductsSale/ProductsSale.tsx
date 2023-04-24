@@ -1,15 +1,20 @@
 import { useState } from "react";
 import Card from "../../Components/Card/Card";
+import { selectAllProducts } from "../../features/products/productsApiSlice";
 import { useAppSelector } from "../../redux/redux.hooks";
+import { IProduct } from "../../Interfaces/Interfaces";
 
 const ProductsSale = () => {
   const [filterByCategory, setFilterByCategory] = useState('all');
   const [filterByGender, setFilterByGender] = useState('female');
-  const products = useAppSelector(({ products }) => products.products);
+  const products = useAppSelector(selectAllProducts) as IProduct[]
+  
+  //replace with spiner
+  if(products.length < 1) return <p>LOAGING...</p>
+
   const productsFilteredByGender = products.filter(pro => filterByGender?.toLowerCase() === "female" ? pro.gender === "female" : pro.gender === "male")
   const productsFilteredByCategory = productsFilteredByGender.filter(pro => filterByCategory === 'all' ? pro : pro.category === filterByCategory && pro)
   const productsOnSale = productsFilteredByCategory.filter(product => product.sale)
-
   const categories =
     products
       .map(product => product.category)

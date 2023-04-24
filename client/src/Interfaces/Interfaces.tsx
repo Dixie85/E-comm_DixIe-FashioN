@@ -9,6 +9,7 @@ export interface ISizes {
 }
 
 export interface IProduct {
+  id?: string
   brand: string;
   category: string;
   description: string;

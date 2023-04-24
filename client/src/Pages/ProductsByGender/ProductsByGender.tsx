@@ -1,19 +1,33 @@
-import { useState } from "react";
-import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom"
 import Card from "../../Components/Card/Card";
+import { selectAllProducts } from "../../features/products/productsApiSlice";
 import { useAppSelector } from "../../redux/redux.hooks";
+import { IProduct } from "../../Interfaces/Interfaces";
 
 const ProductsByGender = () => {
   const { gender } = useParams();
-  const products = useAppSelector(({ products }) => products.products);
-  const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
   const [filterByCategory, setFilterByCategory] = useState('all');
+  const products = useAppSelector(selectAllProducts) as IProduct[]
+  const navigate = useNavigate()
+   
+  useEffect(()=>{
+    if(gender === 'women' || gender === 'men') {
+      return
+    } else {
+      navigate('/*')
+    }
+  },[])
+  
+  //replace with spiner
+  if(products.length < 1) return <p>LOAGING...</p>
+
+  const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
   const productsFilteredByCategory = productsFilteredByGender.filter(pro => filterByCategory === 'all' ? pro : pro.category === filterByCategory && pro)
   const productsOnSale = productsFilteredByCategory.filter(product => product.sale)
   const productsRegularPrice = productsFilteredByCategory.filter(product => !product.sale)
-
   const categories =
-    products
+    products!
       .map(product => product.category)
       .reduce((arr, currentCategory): string[] => {
         if (arr.includes(currentCategory)) {

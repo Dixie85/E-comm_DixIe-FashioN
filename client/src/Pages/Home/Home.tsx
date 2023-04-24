@@ -1,9 +1,17 @@
 import Card from '../../Components/Card/Card'
+import { IProduct } from '../../Interfaces/Interfaces';
+import { selectAllProducts } from '../../features/products/productsApiSlice';
 import { useAppSelector } from '../../redux/redux.hooks';
 
 const Home = () => {
-  const products = useAppSelector(({ products }) => products.products);
-  const sales = products.filter(pro => pro.sale).slice(1,5);
+  // const products = useAppSelector(({ products }) => products.products);
+  const products = useAppSelector(selectAllProducts) as IProduct[]
+
+  //replace with spiner
+  if(products.length < 1) return <p>LOAGING...</p>
+
+  const sales = products.filter(pro => pro.sale).slice(1,5)
+  
   return (
     <section>
       <article className="relative h-screen bg-Hero bg-cover

@@ -11,7 +11,7 @@ const NavLinks = () => {
       {links.map((link, i) => (
         <div key={i}>
           <div className="px-3 text-left md:cursor-pointer group">
-            <Link to={`/${link.name.toLowerCase()}`} >
+            <Link to={`category/${link.name.toLowerCase()}`} >
               <h1
                 className="py-7 flex justify-between items-center md:pr-0 pr-5 group hover:text-danger"
                 onClick={() => {

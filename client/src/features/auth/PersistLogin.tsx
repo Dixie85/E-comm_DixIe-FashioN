@@ -76,19 +76,20 @@ const PersistLogin = () => {
 
     // return content
 
-    return (
-        <>
-          {!persist && <Outlet />}
-          {isLoading && <p>Loading...</p>}
-          {isError && 
-          <>
-          <p className='errmsg'> {errorDataMessage}.</p>
-          <Login />
-          </>}
-          {(isSuccess && trueSuccess) && <Outlet />}
-          {(token && isUninitialized) && <Outlet />}
+    // return (
+    //     <>
+    //       {!persist && <Outlet />}
+    //       {isLoading && <p>Loading...</p>}
+    //       {isError && 
+    //       <>
+    //       <p className='errmsg'> {errorDataMessage}.</p>
+    //       <Login />
+    //       </>}
+    //       {(isSuccess && trueSuccess) && <Outlet />}
+    //       {(token && isUninitialized) && <Outlet />}
 
-        </>
-    )
+    //     </>
+    // )
+    return <Outlet />
 }
 export default PersistLogin

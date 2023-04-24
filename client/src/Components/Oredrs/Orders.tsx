@@ -12,7 +12,7 @@ const Orders = () => {
       {isLoading && <p>LOADING...</p>}
       {isSuccess &&
         <div>
-          {orders.map((order)=> <OrderItem order={order} /> )}
+          {orders.map((order)=> <OrderItem key={order._id} order={order} /> )}
         </div>}
     </section>
   )

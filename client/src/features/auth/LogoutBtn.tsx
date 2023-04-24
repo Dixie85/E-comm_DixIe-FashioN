@@ -13,7 +13,7 @@ const LogoutBtn = () => {
     }] = useSendLogoutMutation()
 
     useEffect(() => {
-        if (isSuccess) navigate('/')
+        if (isSuccess) navigate('/thankyou')
     }, [isSuccess, navigate])
 
     return (

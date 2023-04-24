@@ -1,21 +1,26 @@
 import { useParams } from "react-router-dom"
 import Card from "../../Components/Card/Card";
+import { selectAllProducts } from "../../features/products/productsApiSlice";
 import { useAppSelector } from "../../redux/redux.hooks";
+import { IProduct } from "../../Interfaces/Interfaces";
 
 const ProductsByCategory = () => {
   const { gender, category } = useParams();
-  const products = useAppSelector(({ products }) => products.products);
-  const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
+  const products = useAppSelector(selectAllProducts) as IProduct[]
 
+  //replace with spiner
+  if (products.length < 1) return <p>LOAGING...</p>
+
+  const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
   const displayCategory =
     productsFilteredByGender
       .filter(product => product.category.toLowerCase() === category?.toLowerCase())
-      console.log(displayCategory)
-      console.log(category)
+  console.log(displayCategory)
+  console.log(category)
 
   return (
     <section className="flex flex-col items-center text-center min-h-screen font-[jossefin]">
- <div className="mt-14">
+      <div className="mt-14">
         <h2 className="text-5xl">{category?.toUpperCase()} {gender?.toUpperCase()} </h2>
         <div className="mt-4">
         </div>

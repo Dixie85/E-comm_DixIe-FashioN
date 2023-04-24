@@ -1,19 +1,28 @@
 import IonIcon from '@reacticons/ionicons';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ISizes } from '../../Interfaces/Interfaces';
+import { IProduct, ISizes } from '../../Interfaces/Interfaces';
 import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks';
 import { addTocart, selectCurrentCart } from '../../redux/slices/cart/cartSlice';
 import ProductSizeIcon from '../ProductSizeIcon/ProductSizeIcon';
+import { selectAllProducts } from '../../features/products/productsApiSlice';
 
 const DescriptionCard = () => {
   const { id } = useParams()
-  const products = useAppSelector(({ products }) => products.products);
-  const displayProduct = products.find(pro => pro._id === id)
+  const products = useAppSelector(selectAllProducts) as IProduct[]
   const { cart } = useAppSelector(selectCurrentCart)
   const [inCart, setInCArt] = useState(false)
   const navigate = useNavigate()
   const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    setInCArt(cart.some(pro => pro._id === displayProduct!._id))
+  }, [cart])
+
+  //replace with spiner
+  if (products.length < 1) return <p>LOAGING...</p>
+
+  const displayProduct = products.find(pro => pro._id === id)
   console.log(displayProduct)
 
   const cartQuantity = Object.keys(displayProduct!.size)
@@ -21,13 +30,9 @@ const DescriptionCard = () => {
       return { ...obj, [size]: 0 }
     }, {})
 
-  useEffect(() => {
-    setInCArt(cart.some(pro => pro._id === displayProduct!._id))
-  }, [cart])
-
   const addToCartFailSafe = () => {
     if (!inCart) {
-      return dispatch(addTocart({ ...displayProduct!, cartQuantity}))
+      return dispatch(addTocart({ ...displayProduct!, cartQuantity }))
     }
     return
   }
@@ -53,7 +58,7 @@ const DescriptionCard = () => {
                 <span className='relative  group'>
                   <IonIcon name={'information-circle-outline'} className='text-2xl text-blue-400' />
                   <div className='absolute hidden w-56 p-2 bottom-1 left-6 text-sm bg-black/60 text-gray-100 rounded-md group-hover:block'>
-                  Available sizes are displayed here. To choose a size add product in the basket and go to the checkout.
+                    Available sizes are displayed here. To choose a size add product in the basket and go to the checkout.
                   </div>
                 </span>
               </div>
