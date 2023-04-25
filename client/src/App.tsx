@@ -13,6 +13,7 @@ import Page404 from "./Pages/Page404/Page404";
 import PersistLogin from "./features/auth/PersistLogin";
 import Prefetch from "./Components/Prefetch/Prefetch";
 import ThankYou from "./Pages/ThankYou/ThankYou";
+import RequireAuth from "./Components/RequireAuth/RequireAuth";
 
 function App() {
 
@@ -44,14 +45,17 @@ function App() {
 
             {/* Protected Routes */}
 
-            <Route path="checkout">
-              <Route index element={<Checkout />} />
-            </Route>
+            <Route element={<RequireAuth />} >
+              <Route path="checkout">
+                <Route index element={<Checkout />} />
+              </Route>
 
-            <Route path="profile" element={<UserProfile />}>
-              <Route path="orders" element={<Orders />} />
-              <Route path="userinfo" element={<UserInfo />} />
+              <Route path="profile" element={<UserProfile />}>
+                <Route path="orders" element={<Orders />} />
+                <Route path="userinfo" element={<UserInfo />} />
+              </Route>
             </Route>
+            {/*End Protected Routes */}
 
             <Route path="*" element={<Page404 />}>
 
@@ -60,7 +64,7 @@ function App() {
         </Route>
       </Route>
 
-      <Route path="/thankyou" element={<ThankYou />}/>
+      <Route path="/thankyou" element={<ThankYou />} />
 
 
     </Routes>
