@@ -4,6 +4,7 @@ import Card from "../../Components/Card/Card";
 import { selectAllProducts } from "../../features/products/productsApiSlice";
 import { useAppSelector } from "../../redux/redux.hooks";
 import { IProduct } from "../../Interfaces/Interfaces";
+import { GENDER } from "../../config/paths";
 
 const ProductsByGender = () => {
   const { gender } = useParams();
@@ -12,12 +13,12 @@ const ProductsByGender = () => {
   const navigate = useNavigate()
    
   useEffect(()=>{
-    if(gender === 'women' || gender === 'men') {
+    if(Object.values(GENDER).some(val => gender === val)) {
       return
     } else {
       navigate('/*')
     }
-  },[])
+  },[gender, navigate])
   
   //replace with spiner
   if(products.length < 1) return <p>LOAGING...</p>

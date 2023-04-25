@@ -1,12 +1,23 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import Card from "../../Components/Card/Card";
 import { selectAllProducts } from "../../features/products/productsApiSlice";
 import { useAppSelector } from "../../redux/redux.hooks";
 import { IProduct } from "../../Interfaces/Interfaces";
+import { useEffect } from "react";
+import { SUB_CATEGORIES } from "../../config/paths";
 
 const ProductsByCategory = () => {
   const { gender, category } = useParams();
   const products = useAppSelector(selectAllProducts) as IProduct[]
+  const navigate = useNavigate()
+
+  useEffect(()=>{
+    if(Object.values(SUB_CATEGORIES).some(val => category === val)) {
+      return
+    } else {
+      navigate('/*')
+    }
+  },[category, navigate])
 
   //replace with spiner
   if (products.length < 1) return <p>LOAGING...</p>
