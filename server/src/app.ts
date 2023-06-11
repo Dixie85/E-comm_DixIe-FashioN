@@ -22,10 +22,10 @@ app.use(cookieParser())
 app.use(express.static("db"));
 
 app.get("/api/products", getAllProducts);
-app.use("/auth", auth);
-app.use("/user", user);
+app.use("/api/auth", auth);
+app.use("/api/user", user);
 app.use("/api/order", order);
-app.use("/product", product);
+app.use("/api/product", product);
 
 app.use(errorHandler);
 

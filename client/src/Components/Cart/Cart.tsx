@@ -31,7 +31,7 @@ const Cart = () => {
   },[cart])
 
   return (
-    <section className={`absolute hidden p-2.5 md:block -top-0 right-[-400px] h-screen w-96  duration-500 bg-rose-50 shadow-2xl border-l border-gray-50 ${pathname !== '/checkout' && 'group-hover/cart:right-0'}`}>
+    <section className={`absolute hidden p-2.5  -top-0 right-[-400px] h-screen w-96  duration-500 bg-rose-50 shadow-2xl border-l border-gray-50 ${pathname !== '/checkout' && 'group-hover/cart:right-0 group-hover/cart:md:block'}`}>
       {/* <section className='absolute  p-2.5 md:block -top-0 right-0 h-screen w-96  group-hover/cart:right-1 duration-500 bg-rose-50 shadow-2xl border-l border-gray-50'> */}
       <div className='flex flex-col h-full text-xl'>
 

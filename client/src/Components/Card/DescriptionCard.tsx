@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from '../../redux/redux.hooks';
 import { addTocart, selectCurrentCart } from '../../redux/slices/cart/cartSlice';
 import ProductSizeIcon from '../ProductSizeIcon/ProductSizeIcon';
 import { selectAllProducts } from '../../features/products/productsApiSlice';
+import Spiner from '../../Assets/Spiners/Spiner';
 
 const DescriptionCard = () => {
   const { id } = useParams()
@@ -16,11 +17,15 @@ const DescriptionCard = () => {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
+
+  useEffect(() => {
     setInCArt(cart.some(pro => pro._id === displayProduct!._id))
   }, [cart])
 
   //replace with spiner
-  if (products.length < 1) return <p>LOAGING...</p>
+  if (products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
 
   const displayProduct = products.find(pro => pro._id === id)
   console.log(displayProduct)

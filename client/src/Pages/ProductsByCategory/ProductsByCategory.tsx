@@ -5,11 +5,16 @@ import { useAppSelector } from "../../redux/redux.hooks";
 import { IProduct } from "../../Interfaces/Interfaces";
 import { useEffect } from "react";
 import { SUB_CATEGORIES } from "../../config/paths";
+import Spiner from "../../Assets/Spiners/Spiner";
 
 const ProductsByCategory = () => {
   const { gender, category } = useParams();
   const products = useAppSelector(selectAllProducts) as IProduct[]
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
 
   useEffect(()=>{
     if(Object.values(SUB_CATEGORIES).some(val => category === val)) {
@@ -20,7 +25,7 @@ const ProductsByCategory = () => {
   },[category, navigate])
 
   //replace with spiner
-  if (products.length < 1) return <p>LOAGING...</p>
+  if (products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
 
   const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
   const displayCategory =

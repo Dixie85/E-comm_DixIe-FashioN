@@ -32,11 +32,12 @@ export interface IProduct {
 
 //User Interface
 export interface IUser {
-  _id?: ObjectId
+  _id?: ObjectId;
   username: string;
   email: string;
   password: string;
   roles: string;
+  verified: boolean;
 }
 
 //Order Interface
@@ -49,4 +50,22 @@ export interface IOrder {
   orderNumber: number;
 }
 
+//e-mail verify Token Interface
+export interface IVerifyToken {
+	userId: ObjectId;
+	token: string;
+	createdAt: Date;
+  type?:string;
+}
 
+export interface IDecodedUserInfo {
+  roles: string,
+  userId: string,
+  username: string,
+}
+
+export interface IDecoded {
+  UserInfo: IDecodedUserInfo,
+  iat?: string,
+  exp?: string,
+}

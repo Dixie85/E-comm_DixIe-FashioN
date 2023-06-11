@@ -14,6 +14,9 @@ import PersistLogin from "./features/auth/PersistLogin";
 import Prefetch from "./Components/Prefetch/Prefetch";
 import ThankYou from "./Pages/ThankYou/ThankYou";
 import RequireAuth from "./Components/RequireAuth/RequireAuth";
+import EmailVerify from "./Components/EmailVerify/EmailVerify";
+import PasswordChange from "./Components/PasswordChange/PasswordChange";
+import About from "./Pages/About/About";
 
 function App() {
 
@@ -43,6 +46,9 @@ function App() {
               <Route index element={<ProductsSale />} />
             </Route>
 
+            <Route path="/about" element={<About />} />
+
+
             {/* Protected Routes */}
 
             <Route element={<RequireAuth />} >
@@ -57,15 +63,16 @@ function App() {
             </Route>
             {/*End Protected Routes */}
 
-            <Route path="*" element={<Page404 />}>
-
-            </Route>
+            <Route path="*" element={<Page404 />} />
           </Route>
         </Route>
       </Route>
 
       <Route path="/thankyou" element={<ThankYou />} />
 
+      <Route path="/mail/:id/verify/:token" element={<EmailVerify />} />
+
+      <Route path="/password-reset/:id/:token" element={<PasswordChange />} />
 
     </Routes>
   );

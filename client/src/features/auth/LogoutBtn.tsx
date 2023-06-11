@@ -2,9 +2,11 @@ import IonIcon from '@reacticons/ionicons'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSendLogoutMutation } from './authApiSlice'
+import useTokenDecoder from '../../hooks/useTokenDecoder'
 
 const LogoutBtn = () => {
 
+    const { userName } = useTokenDecoder()
     const navigate = useNavigate()
 
     const [sendLogout, {
@@ -13,7 +15,7 @@ const LogoutBtn = () => {
     }] = useSendLogoutMutation()
 
     useEffect(() => {
-        if (isSuccess) navigate('/thankyou')
+        if (isSuccess) navigate('/thankyou', { replace: true, state: { logingOut: true, userName } })
     }, [isSuccess, navigate])
 
     return (

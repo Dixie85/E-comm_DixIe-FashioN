@@ -5,12 +5,17 @@ import { selectAllProducts } from "../../features/products/productsApiSlice";
 import { useAppSelector } from "../../redux/redux.hooks";
 import { IProduct } from "../../Interfaces/Interfaces";
 import { GENDER } from "../../config/paths";
+import Spiner from "../../Assets/Spiners/Spiner";
 
 const ProductsByGender = () => {
   const { gender } = useParams();
   const [filterByCategory, setFilterByCategory] = useState('all');
   const products = useAppSelector(selectAllProducts) as IProduct[]
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
    
   useEffect(()=>{
     if(Object.values(GENDER).some(val => gender === val)) {
@@ -21,7 +26,7 @@ const ProductsByGender = () => {
   },[gender, navigate])
   
   //replace with spiner
-  if(products.length < 1) return <p>LOAGING...</p>
+  if(products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
 
   const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
   const productsFilteredByCategory = productsFilteredByGender.filter(pro => filterByCategory === 'all' ? pro : pro.category === filterByCategory && pro)

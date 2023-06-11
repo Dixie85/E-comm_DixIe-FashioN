@@ -2,11 +2,11 @@ import IonIcon from "@reacticons/ionicons"
 import CartItem from "../../Components/Cart/CartItem"
 import { useAppDispatch, useAppSelector } from "../../redux/redux.hooks"
 import { resetCart, selectCurrentCart } from "../../redux/slices/cart/cartSlice"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useAddNewOrderMutation } from "../../features/orders/ordersApiSlice"
-import { isCheckoutMessageOpen } from "../../redux/slices/checkout/checkoutMessageSlice"
 import { useNavigate } from "react-router-dom"
 import useTokenDecoder from "../../hooks/useTokenDecoder"
+import useInfoMessage from "../../hooks/useInfoMessage"
 
 const inputInitialState = {
   firstName: '',
@@ -26,6 +26,11 @@ const Checkout = () => {
   const cartEmpty = cart.length < 1
 
   const [addNewOrder] = useAddNewOrderMutation()
+  const [infoMessage] = useInfoMessage()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
 
   const orderSubmitData = {
     fullName: `${inputData.firstName} ${inputData.lastName} `,
@@ -51,18 +56,15 @@ const Checkout = () => {
     try {
       e.preventDefault()
       if (cartEmpty) {
-        dispatch(isCheckoutMessageOpen({ isOpen: true, message: 'Cart is empty!', isError: true }))
-        setTimeout(() => dispatch(isCheckoutMessageOpen({ isOpen: false, message: '', isError: false })), 5000)
+        infoMessage('Cart is empty!', true)
         return
       }
       if (allHaveSizes) {
-        dispatch(isCheckoutMessageOpen({ isOpen: true, message: 'Some of the products in you bag are mising sizes!', isError: true }))
-        setTimeout(() => dispatch(isCheckoutMessageOpen({ isOpen: false, message: '', isError: false })), 5000)
+        infoMessage('Some of the products in you bag are mising sizes!', true)
         return
       }
       const { message } = await addNewOrder(orderSubmitData).unwrap()
-      dispatch(isCheckoutMessageOpen({ isOpen: true, message, isError: false }))
-      setTimeout(() => dispatch(isCheckoutMessageOpen({ isOpen: false, message: '', isError: false })), 5000)
+      infoMessage(message, false)
       dispatch(resetCart())
       setInputData(inputInitialState)
       navigate('/')
@@ -70,8 +72,7 @@ const Checkout = () => {
       //@ts-ignore
       console.log(error!.data.message);
       //@ts-ignore
-      dispatch(isCheckoutMessageOpen({ isOpen: true, message: error!.data.message, isError: true }))
-      setTimeout(() => dispatch(isCheckoutMessageOpen({ isOpen: false, message: '', isError: false })), 5000)
+      infoMessage(error!.data.message, true)
     }
   }
 

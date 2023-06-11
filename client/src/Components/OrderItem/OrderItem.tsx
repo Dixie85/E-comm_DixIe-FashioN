@@ -27,7 +27,7 @@ const OrderItem = ({ order }: IOrderItem) => {
         </div>
         <div className='px-4 py-2 border-b text-center md:py-0 md:border-b-0 md:border-r md:text-left '>
           <p className="text-gray-500/90">Total:</p>
-          <span>{order.sum}</span>
+          <span>{order.sum} €</span>
         </div>
         <div className='px-4 py-2 border-b text-center md:py-0 md:border-b-0 md:text-left capitalize'>
           <p className="text-gray-500/90">Status:</p>

@@ -6,6 +6,7 @@ import nodemailer from "nodemailer";
 import Mailgen from "mailgen";
 import { IProductSizes } from "../interfaces/interfaces";
 import { Product } from "../models/Products";
+import { Users } from "../models/Users";
 
 // @desc Get all pending orders
 // @route GET /order
@@ -183,10 +184,74 @@ export const newOrder = asyncHandler(async (req, res): Promise<any> => {
   // Create new order
   const order = await connect(() => Order.create(orderObject));
   close();
+
   if (order) {
+    const user = await connect(() => Users.findById(userId).select("-__v").exec())
+    console.log(user, 'user');
     console.log(order, "order");
     
+    close();
+    // confirmaOrder( user.email, cart )
+
+    let config = {
+      service: "gmail",
+      auth: {
+        user: process.env.G_EMAIL,
+        pass: process.env.G_PASSWORD,
+      },
+    };
+  
+    let transporter = nodemailer.createTransport(config);
+  
+    let MailGenerator = new Mailgen({
+      theme: "cerberus",
+      product: {
+        name: "DixIe FashioN",
+        link: "http://localhost:3000/",
+      },
+    });
+  
+    let response = {
+      body: {
+        name: user.username,
+        intro: `Your order number is ${order.orderNumber}`,
+        table: {
+          data: cart.map((pro: { name: any; description: any; price: any; }) => {
+            return {
+            item: pro.name,
+            description: `${pro.description.slice(0,50)}...`,
+            price: pro.price,}
+          }),
+          columns: {
+            // Optionally, customize the column widths
+            customWidth: {
+                item: '30%',
+                price: '15%'
+            },
+            // Optionally, change column text alignment
+            customAlignment: {
+                price: 'right'
+            }
+          }
+        },
+        outro: "Looking forward to do more business",
+      },
+    };
+  
+    let mail = MailGenerator.generate(response);
+  
+    let message = {
+      from: process.env.G_EMAIL,
+      to: user.email,
+      subject: `Order No ${order.orderNumber}, confirmation and details`,
+      html: mail,
+    };
+  
+    transporter.sendMail(message)
+
+
     //created
+    
     res.status(201).json({ message: `A confirmation and details about your order will arrive on your email shortly` });
   } else {
     res.status(400).json({ message: "Invalid user data received" });
@@ -253,3 +318,52 @@ export const sendOrderBill = asyncHandler(async (req, res): Promise<any> => {
 
   // res.status(201).json("getBill Successfully...!");
 });
+
+// async function confirmaOrder (userEmail: any, cart: { name: any; description: any; price: any; }[]) {
+//   let config = {
+//     service: "gmail",
+//     auth: {
+//       user: process.env.G_EMAIL,
+//       pass: process.env.G_PASSWORD,
+//     },
+//   };
+
+//   let transporter = nodemailer.createTransport(config);
+
+//   let MailGenerator = new Mailgen({
+//     theme: "default",
+//     product: {
+//       name: "DixIe FashioN",
+//       link: "http://localhost:3000/",
+//     },
+//   });
+
+//   let response = {
+//     body: {
+//       name: "Dixie Dev",
+//       intro: "Your bill has arrived!",
+//       table: {
+//         data: cart.map((pro: { name: any; description: any; price: any; }) => {
+//           return {
+//           item: pro.name,
+//           description: pro.description,
+//           price: pro.price,}
+//         })
+//       },
+//       outro: "Looking forward to do more business",
+//     },
+//   };
+
+//   let mail = MailGenerator.generate(response);
+
+//   let message = {
+//     from: process.env.G_EMAIL,
+//     to: userEmail,
+//     subject: "Place Order",
+//     html: mail,
+//   };
+
+//   transporter.sendMail(message)
+  
+//   return
+// }

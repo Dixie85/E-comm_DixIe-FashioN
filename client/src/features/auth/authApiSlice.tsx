@@ -20,7 +20,7 @@ export const authApiSlice = apiSlice.injectEndpoints({
                     //const { data } = 
                     await queryFulfilled
                     //console.log(data)
-                    dispatch(logOut(''))
+                    // dispatch(logOut(''))
                     dispatch(apiSlice.util.resetApiState())
                 } catch (err) {
                     console.log(err)
@@ -43,6 +43,24 @@ export const authApiSlice = apiSlice.injectEndpoints({
               }
           }
       }),
+        emailVerify: builder.mutation({
+          query: (body) => ({
+              url: `/auth/mail/${body.id}/verify/${body.token}`,
+              method: 'GET',
+          }),
+          async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+              try {
+                  const { data } = await queryFulfilled
+                  console.log(data, 'emailVerify')
+                  const { message } = data
+                  console.log({message});
+                  
+                  
+              } catch (err) {
+                  console.log(err)
+              }
+          }
+      }),
     })
 })
 
@@ -50,4 +68,5 @@ export const {
     useLoginMutation,
     useSendLogoutMutation,
     useRefreshMutation,
+    useEmailVerifyMutation,
 } = authApiSlice 

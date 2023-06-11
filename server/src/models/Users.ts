@@ -18,6 +18,10 @@ const userSchema = new Schema<IUser>({
     type: String,
     default: "User",
   },
+  verified: {
+    type: Boolean,
+    default: false
+  },
 });
 
 export const Users = model<IUser>("user", userSchema);

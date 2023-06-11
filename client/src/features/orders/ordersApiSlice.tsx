@@ -4,12 +4,12 @@ import { apiSlice } from "../../app/api/apiSlice"
 export const ordersApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
         getUserOrders: builder.query<IOrder[], string>({
-            query: id => `/api/order/${id}`,
+            query: id => `/order/${id}`,
             providesTags: [{ type: 'Order', id: 'LIST' }],
         }),
         addNewOrder: builder.mutation({
             query: initialOrderData => ({
-                url: '/api/order',
+                url: '/order',
                 method: 'POST',
                 body: {
                     ...initialOrderData,
@@ -19,7 +19,7 @@ export const ordersApiSlice = apiSlice.injectEndpoints({
         }),
         cancelOrder: builder.mutation({
             query: initialUserData => ({
-                url: '/api/order/canceled',
+                url: '/order/canceled',
                 method: 'PATCH',
                 body: {
                     ...initialUserData,

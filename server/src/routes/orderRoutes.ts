@@ -1,9 +1,13 @@
 import express from "express"
 const order = express.Router()
 import { shippedOrder, newOrder, cancelOrder, getAllPendingOrders, getUserOrder } from "../controllers/orderController"
+import verifyJWT from "../middleware/verifyJWT"
+import authCheckAdmin from "../middleware/authCheckAdmin"
+
+order.use(verifyJWT)
 
 order.route('/')
-    .get(getAllPendingOrders)
+    .get(authCheckAdmin, getAllPendingOrders)
     .post(newOrder)
 
 order.route('/:id')
@@ -13,8 +17,7 @@ order.route('/canceled')
     .patch(cancelOrder)
 
 order.route('/shipped')
-    .patch(shippedOrder)
+    .patch(authCheckAdmin, shippedOrder)
 
 
 export default order
-

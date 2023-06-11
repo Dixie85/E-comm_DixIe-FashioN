@@ -2,7 +2,10 @@ import { Users } from '../models/Users'
 import bcrypt from 'bcrypt'
 import asyncHandler from 'express-async-handler'
 import { connect, close } from '../../db/mongo.config';
-import { IUser } from '../interfaces/interfaces';
+import { IVerifyToken, IUser } from '../interfaces/interfaces';
+import { verifyEmail } from '../utils/verifyEmail';
+import { VerifyToken } from '../models/VerifyToken';
+import { randomBytes } from 'crypto'
 
 // @desc Get all users
 // @route GET /users
@@ -31,14 +34,14 @@ export const createNewUser = asyncHandler(async (req, res): Promise<any> => {
     }
 
     // Check for duplicate username
-    const duplicateUserName = await connect(() => Users.findOne({ username }).lean().exec()) as IUser
+    const duplicateUserName = await connect(() => Users.findOne({ username }).collation({ locale: 'en', strength: 2 }).lean().exec()) as IUser
     close()
     if (duplicateUserName) {
         return res.status(409).json({ message: 'Username already exists' })
     }
 
     // Check for duplicate email
-    const duplicateEmail = await connect(() => Users.findOne({ email }).lean().exec()) as IUser
+    const duplicateEmail = await connect(() => Users.findOne({ email }).collation({ locale: 'en', strength: 2 }).lean().exec()) as IUser
     close()
     if (duplicateEmail) {
         return res.status(409).json({ message: 'Account with this email already exists' })
@@ -51,11 +54,29 @@ export const createNewUser = asyncHandler(async (req, res): Promise<any> => {
 
     // Create and store new user 
     const user = await connect(() => Users.create(userObject)) as IUser
+    console.log({user});
+    if (!user) {
+        close()
+        return res.status(400).json({ message: 'Invalid user data received' })
+    }
+
+    // Create new token for verification of a users account
+    const mailTokenObject = { userId: user._id, token: randomBytes(32).toString("hex"), type: 'mail' }
+
+    const token = await connect(() => VerifyToken.create(mailTokenObject)) as IVerifyToken
+    console.log({token});
     close()
-    if (user) { //created 
-        res.status(201).json({ message: `New user ${username} created` })
+
+    //Url address provided to the user for verification
+    //this url will hit a front end route
+    const url = `${process.env.BASE_URL}mail/${user._id}/verify/${token.token}`;
+ 
+    const emailWasSend = await verifyEmail(user.email, "Verify Email", url);
+
+    if (emailWasSend.success) {
+        return res.status(201).json({ message: `A verification email was sent to your email address`})
     } else {
-        res.status(400).json({ message: 'Invalid user data received' })
+        res.json({ message: emailWasSend.error })
     }
 })
 

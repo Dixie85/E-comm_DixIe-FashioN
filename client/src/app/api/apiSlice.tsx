@@ -3,7 +3,7 @@ import { setCredentials } from '../../redux/slices/auth/authSlice'
 import { RootState } from '../store'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'http://localhost:8080',
+    baseUrl: 'http://localhost:8080/api',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = (getState() as RootState).auth.token

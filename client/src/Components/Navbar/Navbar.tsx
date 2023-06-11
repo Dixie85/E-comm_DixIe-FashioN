@@ -6,15 +6,15 @@ import NavLinks from "./NavLinks";
 import IonIcon from '@reacticons/ionicons';
 import Cart from "../Cart/Cart";
 import UserDropMenu from "../UserDropMenu/UserDropMenu";
-import CheckoutMessage from "../CheckoutMessage/CheckoutMessage";
+import InfoMessage from "../InfoMessage/InfoMessage";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const {pathname} = useLocation() 
 
   return (
-    <nav className=" fixed top-0 bg-white w-screen shadow-md z-40">
-      <CheckoutMessage />
+    <nav className=" fixed top-0 bg-white w-screen max-w-[1440px] shadow-md z-40">
+      <InfoMessage />
       <div className="flex items-center font-medium justify-between">
         <div className="z-40 p-4 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="h-9 lg:ml-8" />

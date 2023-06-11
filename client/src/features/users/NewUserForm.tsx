@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import IonIcon from "@reacticons/ionicons"
 import { useAppDispatch } from "../../redux/redux.hooks"
 import { isRegisterOpen } from "../../redux/slices/auth/registerSlice"
+import Spiner from "../../Assets/Spiners/Spiner"
 
 const USER_REGEX = /^[A-z]{3,20}$/
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
@@ -135,7 +136,7 @@ const NewUserForm = () => {
           </main>
           
           <footer className='flex items-center min-h-[2rem]'>
-            {isLoading && <p>processing...</p>}
+            {isLoading && <p><Spiner /></p>}
             {isError && <p className='text-red-500'>{`${errorDataMessage}`}</p>}
           </footer>
 

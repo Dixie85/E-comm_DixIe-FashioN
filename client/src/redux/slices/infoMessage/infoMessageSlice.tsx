@@ -3,25 +3,25 @@ import { RootState } from "../../../app/store";
 
 
 // Defineing a type for the LoginSlice state
-interface ICheckoutMessageSlice {
+interface IInfoMessageSlice {
   isMessageOpen: boolean,
   message: string,
   isError: boolean,     
 }
 
 // Define the initial state using that type
-const initialState: ICheckoutMessageSlice = {
+const initialState: IInfoMessageSlice = {
   isMessageOpen: false,
   message: '',
   isError: false,
 };
 
-const checkoutMessageSlice = createSlice({
-  name: 'checkoutMessage',
+const infoMessageSlice = createSlice({
+  name: 'infoMessage',
   initialState,
   reducers: {
-    isCheckoutMessageOpen: (state, action) => {
-          console.log(action.payload, 'isCheckoutMessageOpen' );        
+    isInfoMessageOpen: (state, action) => {
+          console.log(action.payload, 'isInfoMessageOpen' );        
           state.isMessageOpen = action.payload.isOpen
           state.message = action.payload.message
           state.isError = action.payload.isError
@@ -29,8 +29,8 @@ const checkoutMessageSlice = createSlice({
   }
 })
 
-export const { isCheckoutMessageOpen } = checkoutMessageSlice.actions
+export const { isInfoMessageOpen } = infoMessageSlice.actions
 
-export default checkoutMessageSlice.reducer
+export default infoMessageSlice.reducer
 
-export const checkoutMessageOpen = (state: RootState ) => state.checkoutMessage
+export const infoMessageOpen = (state: RootState ) => state.infoMessage
