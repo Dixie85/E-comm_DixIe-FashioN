@@ -79,7 +79,7 @@ const Checkout = () => {
   return (
     <section className='p-4 min-h-screen font-[josefin] max-w-[1220px] m-auto'>
 
-      <section className='flex p-3  shadow'>
+      <section className='flex flex-col md:flex-row p-3  shadow'>
 
         <article className=' flex-1 p-2'>
           {cart.map((pro) =>
@@ -87,7 +87,7 @@ const Checkout = () => {
           )}
         </article>
 
-        <aside className='w-1/3 py-3 pl-3 border-l border-black'>
+        <aside className=' md:w-1/3 py-3 pl-3 border-l border-black'>
 
           <section className="border shadow mb-4">
             <h2 className="uppercase tracking-widest py-1 pl-2 bg-rose-50" >summary</h2>

@@ -46,20 +46,20 @@ const ProductsByGender = () => {
 
   return (
     <section className="flex flex-col items-center text-center font-[jossefin] min-h-screen">
-      <div className="mt-14">
-        <h2 className="text-5xl">{gender?.toUpperCase()}'S COLLECTION</h2>
-        <div className="mt-4">
+      <div className="mt-14 w-full">
+        <h2 className="text-4xl md:text-5xl">{gender?.toUpperCase()}'S COLLECTION</h2>
+        <p className="flex justify-center mt-4 w-full flex-wrap">
           {categories.map(category => <span key={category} className={`mr-6 text-xl capitalize cursor-pointer transform duration-200 ${category === filterByCategory ? 'text-red-400 underline' : ''} `} onClick={() => setFilterByCategory(category)}>{category}</span>)}
-        </div>
+        </p>
       </div>
-      <div className="mt-10 max-w-[1220px]">
-        <div className="p-5 md:py-7 md:mx-12 md:shadow-xl md:border md:border-gray-100/50 md:rounded-xl md:bg-gray-100/60">
+      <div className="md:mt-10 max-w-[1220px]">
+        <div className="p-5 hidden md:block md:py-7 md:mx-12 md:shadow-xl md:border md:border-gray-100/50 md:rounded-xl md:bg-gray-100/60">
           <h2 className="pb-2 text-3xl font-medium">Sneak peek to some of our ON SALE products</h2>
           <div className="grid grid-cols-3 gap-16 px-10 mt-4">{productsOnSale.map(product => <Card key={product._id} product={product} />).slice(0, 3)}</div>
         </div>
         <div className="p-5 md:py-7 md:m-7 md:shadow-xl md:border md:border-gray-100/50 md:rounded-xl md:bg-gray-100/60">
           <h2 className="my-7 pb-2 text-3xl font-medium ">The best look anytime anywhere</h2>
-          <div className="grid grid-cols-4 gap-4 mt-">{productsRegularPrice.map(product => <Card key={product._id} product={product} />)}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-">{productsRegularPrice.map(product => <Card key={product._id} product={product} />)}</div>
         </div>
       </div>
     </section>

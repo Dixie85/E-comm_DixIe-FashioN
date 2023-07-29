@@ -44,7 +44,7 @@ const ProductsByCategory = () => {
       <div className="max-w-[1220px]">
         <div className="p-5 md:py-7 md:m-7 md:shadow-xl md:border md:border-gray-100/50 md:rounded-xl md:bg-gray-100/60">
           <h2 className="my-7 pb-2 text-3xl font-medium ">New Clothes, New Passion</h2>
-          <div className="grid grid-cols-4 gap-4 mt-">{displayCategory.map(product => !product.sale && <Card key={product._id} product={product} />)}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-4 mt-">{displayCategory.map(product => !product.sale && <Card key={product._id} product={product} />)}</div>
         </div>
       </div>
 

@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="flex items-center font-medium justify-between">
         <div className="z-40 p-4 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="h-9 lg:ml-8" />
-          <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
+          <div className={`flex items-center text-3xl md:hidden ${open ? "hidden" : ""}`} onClick={() => setOpen(!open)}>
             <IonIcon name={`${open ? "close" : "menu"}`}></IonIcon>
           </div>
         </div>
@@ -54,10 +54,13 @@ const Navbar = () => {
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+        md:hidden bg-white fixed w-[220px] top-0 overflow-y-auto bottom-0 py-24 pl-4
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
+          <li className="text-xl text-right pr-3" onClick={() => setOpen(!open)}>
+            <IonIcon name="close"></IonIcon>
+          </li>
           <li>
             <Link to="/" className="py-7 px-3 inline-block">
               Home
