@@ -7,6 +7,7 @@ import { useAddNewOrderMutation } from "../../features/orders/ordersApiSlice"
 import { useNavigate } from "react-router-dom"
 import useTokenDecoder from "../../hooks/useTokenDecoder"
 import useInfoMessage from "../../hooks/useInfoMessage"
+import CartItemMobView from "../../Components/Cart/CartItemMobView"
 
 const inputInitialState = {
   firstName: '',
@@ -79,15 +80,23 @@ const Checkout = () => {
   return (
     <section className='p-4 min-h-screen font-[josefin] max-w-[1220px] m-auto'>
 
-      <section className='flex flex-col md:flex-row p-3  shadow'>
+      <section className='flex flex-col p-3 shadow md:flex-row'>
 
-        <article className=' flex-1 p-2'>
+        <article className='hidden flex-1 p-2 xl:block'>
           {cart.map((pro) =>
             <CartItem key={pro._id} pro={pro} />
           )}
         </article>
 
-        <aside className=' md:w-1/3 py-3 pl-3 border-l border-black'>
+        <article className='flex-1 p-2 xl:hidden'>
+          <h2 className="text-xl text-center text-black/75 uppercase underline md:hidden">checkout</h2>
+
+          {cart.map((pro) =>
+            <CartItemMobView key={pro._id} pro={pro} />
+          )}
+        </article>
+
+        <aside className='py-3 border-black md:w-1/3  md:pl-3  md:border-l'>
 
           <section className="border shadow mb-4">
             <h2 className="uppercase tracking-widest py-1 pl-2 bg-rose-50" >summary</h2>
