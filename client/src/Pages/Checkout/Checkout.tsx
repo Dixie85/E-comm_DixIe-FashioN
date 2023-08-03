@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom"
 import useTokenDecoder from "../../hooks/useTokenDecoder"
 import useInfoMessage from "../../hooks/useInfoMessage"
 import CartItemMobView from "../../Components/Cart/CartItemMobView"
+import ScrollUpBtn from "../../Components/Buttons/ScrollUpBtn"
 
 const inputInitialState = {
   firstName: '',
@@ -78,7 +79,7 @@ const Checkout = () => {
   }
 
   return (
-    <section className='p-4 min-h-screen font-[josefin] max-w-[1220px] m-auto'>
+    <section className='relative p-4 min-h-screen font-[josefin] max-w-[1220px] m-auto'>
 
       <section className='flex flex-col p-3 shadow md:flex-row'>
 
@@ -89,7 +90,7 @@ const Checkout = () => {
         </article>
 
         <article className='flex-1 p-2 xl:hidden'>
-          <h2 className="text-xl text-center text-black/75 uppercase underline md:hidden">checkout</h2>
+          <h2 className="pb-1.5 text-xl text-center text-black/75 border-b uppercase md:hidden">checkout</h2>
 
           {cart.map((pro) =>
             <CartItemMobView key={pro._id} pro={pro} />
@@ -196,6 +197,9 @@ const Checkout = () => {
 
         </aside>
       </section>
+
+      <ScrollUpBtn />
+
     </section>
   )
 }

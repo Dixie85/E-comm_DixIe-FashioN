@@ -31,7 +31,7 @@ const SizeQuantitySelector = ({ sizes, id, isCart }: ISizeQuantitySelector) => {
       </button>
       <span className='relative flex items-end group self-end'>
         <IonIcon name='information-circle-outline' className='text-base text-blue-400' />
-        <div className={`absolute hidden w-40 p-1.5  ${isCart ? 'right-6 ' : '' }text-sm bg-black/70 text-gray-100 rounded-md group-hover:block`}>
+        <div className={`absolute hidden w-40 p-1.5  ${isCart ? 'right-6 ' : 'right-0 bottom-0' }text-sm bg-black/70 text-gray-100 rounded-md group-hover:block`}>
         Click the button to switch between 'add' and 'remove' functionality.
         </div>
       </span>
