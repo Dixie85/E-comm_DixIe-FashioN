@@ -79,7 +79,7 @@ const Checkout = () => {
   }
 
   return (
-    <section className='relative p-4 min-h-screen font-[josefin] max-w-[1220px] m-auto'>
+    <section className='p-4 min-h-screen font-[josefin] max-w-[1220px] m-auto'>
 
       <section className='flex flex-col p-3 shadow md:flex-row'>
 

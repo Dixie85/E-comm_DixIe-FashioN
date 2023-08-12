@@ -7,10 +7,12 @@ import IonIcon from '@reacticons/ionicons';
 import Cart from "../Cart/Cart";
 import UserDropMenu from "../UserDropMenu/UserDropMenu";
 import InfoMessage from "../InfoMessage/InfoMessage";
+import CartMobView from "../Cart/CartMobView";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const {pathname} = useLocation() 
+  const [openCartMobView, setOpenCartMobView] = useState(false);
+  const { pathname } = useLocation()
 
   return (
     <nav className=" fixed top-0 bg-white w-screen max-w-[1440px] shadow-md z-40">
@@ -43,18 +45,19 @@ const Navbar = () => {
             <UserDropMenu />
           </button>
           <div className=" group/cart  md:block hidden">
-            <button className={` flex lg:mr-0 text-4xl  pl-3 pr-10 py-3 rounded-full font-[josefin] items-center ${pathname !== '/checkout' ? 'text-black/70' : 'text-black/30' }`}>
+            <button className={` flex lg:mr-0 text-4xl  pl-3 pr-10 py-3 rounded-full font-[josefin] items-center ${pathname !== '/checkout' ? 'text-black/70' : 'text-black/30'}`}>
               <IonIcon name="bag-handle" />
             </button>
             <Cart />
           </div>
         </div>
 
+        {(openCartMobView && pathname !== '/checkout') && <CartMobView />}
 
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden bg-white fixed w-[220px] top-0 overflow-y-auto bottom-0 py-24 pl-4
+        md:hidden bg-orange-200 fixed w-[220px] top-0 overflow-y-auto bottom-0 py-24 pl-4
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
@@ -67,9 +70,9 @@ const Navbar = () => {
             </Link>
           </li>
           <NavLinks />
-          <div className="text-3xl md:hidden " onClick={(e) => console.log(e)}>
-            <IonIcon name={`cart-outline`}></IonIcon>
-          </div>
+          <li className={` flex lg:mr-0 text-4xl  pl-3 pr-10 py-3 rounded-full items-center ${pathname !== '/checkout' ? 'text-black/70' : 'text-black/30'}`} onClick={() => setOpenCartMobView(!openCartMobView)}>
+            <IonIcon name={`bag-handle`}></IonIcon>
+          </li>
         </ul>
       </div>
     </nav>
