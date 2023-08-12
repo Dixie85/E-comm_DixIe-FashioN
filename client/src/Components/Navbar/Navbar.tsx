@@ -52,7 +52,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        {(openCartMobView && pathname !== '/checkout') && <CartMobView />}
+        {/* {(openCartMobView && pathname !== '/checkout') && <CartMobView openCartMobView={openCartMobView} setOpenCartMobView={setOpenCartMobView}/>} */}
+        <CartMobView openCartMobView={openCartMobView} setOpenCartMobView={setOpenCartMobView}/>
 
         {/* Mobile nav */}
         <ul
@@ -70,7 +71,7 @@ const Navbar = () => {
             </Link>
           </li>
           <NavLinks />
-          <li className={` flex lg:mr-0 text-4xl  pl-3 pr-10 py-3 rounded-full items-center ${pathname !== '/checkout' ? 'text-black/70' : 'text-black/30'}`} onClick={() => setOpenCartMobView(!openCartMobView)}>
+          <li className={` flex lg:mr-0 text-4xl  pl-3 pr-10 py-3 rounded-full items-center ${pathname !== '/checkout' ? 'text-black/70' : 'text-black/30'}`} onClick={() => {setOpenCartMobView(!openCartMobView); setOpen(!open)}}>
             <IonIcon name={`bag-handle`}></IonIcon>
           </li>
         </ul>

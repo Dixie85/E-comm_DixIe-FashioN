@@ -7,7 +7,12 @@ import { isLoginOpen } from '../../redux/slices/auth/loginSlice'
 import { selectCurrentCart } from '../../redux/slices/cart/cartSlice'
 import CartItem from './CartItem'
 
-const CartMobView = () => {
+interface ICartMobView{
+  openCartMobView: boolean,
+  setOpenCartMobView: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const CartMobView = ({openCartMobView, setOpenCartMobView}: ICartMobView) => {
   const { cart, shipping, total } = useAppSelector(selectCurrentCart)
   const token = useAppSelector(selectCurrentToken)
   const [cartEmpty, setCartEmpty] = useState(false)
@@ -17,21 +22,26 @@ const CartMobView = () => {
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
-  const {pathname} = useLocation()  
+  const { pathname } = useLocation()
 
   const handleCheckoutBth = () => {
-    if(!authToken) dispatch(isLoginOpen(true))
-    if(cart.length < 1) setCartEmpty(true)  
-    if(isDisebled) navigate('/checkout')
+    if (!authToken) dispatch(isLoginOpen(true))
+    if (cart.length < 1) setCartEmpty(true)
+    if (isDisebled) navigate('/checkout')
   }
 
-  useEffect(()=>{
-    if(cartEmpty) setCartEmpty(false)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[cart])
+  useEffect(() => {
+    if (cartEmpty) setCartEmpty(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cart])
 
   return (
-    <section className={`fixed p-2.5  top-0 right-0 h-screen w-screen  duration-500 bg-rose-50 shadow-2xl border-l border-gray-50 z-50 ${pathname !== '/checkout' && 'group-hover/cart:right-0 group-hover/cart:md:block'}`}>
+    <section className={`fixed p-2.5  top-0  h-screen w-screen  duration-500 bg-rose-50 shadow-2xl border-l border-gray-50 z-50 ${(pathname !== '/checkout' && openCartMobView) ? 'right-0' : 'right-[-100%]'}`}>
+      <section className='absolute right-2'>
+        <button className="text-2xl " onClick={() => setOpenCartMobView(false)}>
+          <IonIcon name="close"></IonIcon>
+        </button>
+      </section>
       <div className='flex flex-col h-full text-xl'>
 
         <div className='flex flex-col justify-between border-b'>
@@ -48,7 +58,7 @@ const CartMobView = () => {
           {cart.length < 1 && <span className='text-base text-center p-0.5 mt-3 text-black/70 '>Cart is empty</span>}
           {cartEmpty && <span className='text-base text-center p-0.5 mt-2 text-danger '>Your shopping bag is still empty</span>}
           {cart.map((pro) =>
-            <CartItem key={pro._id} pro={pro} isCart={true}/>
+            <CartItem key={pro._id} pro={pro} isCart={true} />
           )}
         </div>
 
