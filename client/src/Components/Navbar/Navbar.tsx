@@ -52,13 +52,12 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* {(openCartMobView && pathname !== '/checkout') && <CartMobView openCartMobView={openCartMobView} setOpenCartMobView={setOpenCartMobView}/>} */}
         <CartMobView openCartMobView={openCartMobView} setOpenCartMobView={setOpenCartMobView}/>
 
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden bg-orange-200 fixed w-[220px] top-0 overflow-y-auto bottom-0 py-24 pl-4
+        md:hidden bg-gray-100 fixed w-[220px] top-0 overflow-y-auto bottom-0 py-24 pl-4
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >

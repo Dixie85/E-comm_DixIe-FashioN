@@ -27,7 +27,7 @@ const CartMobView = ({openCartMobView, setOpenCartMobView}: ICartMobView) => {
   const handleCheckoutBth = () => {
     if (!authToken) dispatch(isLoginOpen(true))
     if (cart.length < 1) setCartEmpty(true)
-    if (isDisebled) navigate('/checkout')
+    if (isDisebled) {navigate('/checkout'); setOpenCartMobView(false)}
   }
 
   useEffect(() => {
@@ -36,9 +36,9 @@ const CartMobView = ({openCartMobView, setOpenCartMobView}: ICartMobView) => {
   }, [cart])
 
   return (
-    <section className={`fixed p-2.5  top-0  h-screen w-screen  duration-500 bg-rose-50 shadow-2xl border-l border-gray-50 z-50 ${(pathname !== '/checkout' && openCartMobView) ? 'right-0' : 'right-[-100%]'}`}>
-      <section className='absolute right-2'>
-        <button className="text-2xl " onClick={() => setOpenCartMobView(false)}>
+    <section className={`fixed p-2.5  top-0  h-screen w-screen bg-rose-50 shadow-2xl border-l border-gray-50 z-50 duration-500 ${(pathname !== '/checkout' && openCartMobView) ? 'right-0' : 'right-[-100%]'} md:hidden`}>
+      <section className='absolute right-3'>
+        <button className="p-3 text-2xl" onClick={() => setOpenCartMobView(false)}>
           <IonIcon name="close"></IonIcon>
         </button>
       </section>
