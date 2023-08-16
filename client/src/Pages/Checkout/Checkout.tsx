@@ -5,11 +5,9 @@ import { resetCart, selectCurrentCart } from "../../redux/slices/cart/cartSlice"
 import { useEffect, useState } from "react"
 import { useAddNewOrderMutation } from "../../features/orders/ordersApiSlice"
 import { useNavigate } from "react-router-dom"
-import { useInView } from 'react-intersection-observer'
 import useTokenDecoder from "../../hooks/useTokenDecoder"
 import useInfoMessage from "../../hooks/useInfoMessage"
 import CartItemMobView from "../../Components/Cart/CartItemMobView"
-import ScrollUpBtn from "../../Components/Buttons/ScrollUpBtn"
 
 const inputInitialState = {
   firstName: '',
@@ -21,7 +19,6 @@ const inputInitialState = {
 
 const Checkout = () => {
   const { cart, shipping, total } = useAppSelector(selectCurrentCart)
-  const { ref: btnScrollUp, inView: btnScrollUpIsVisible } = useInView({})
   const [inputData, setInputData] = useState(inputInitialState)
   const totalWithOrNotShipping = total < 70 ? (total + Number(shipping)).toFixed(2) : total
   const { userId } = useTokenDecoder()
@@ -92,15 +89,8 @@ const Checkout = () => {
         </article>
 
         <article className='flex-1 p-2 xl:hidden'>
-          <h2
-            ref={btnScrollUp}
-            className="pb-1.5 text-xl text-center text-black/75 border-b uppercase md:hidden"
-          >checkout
-          </h2>
-
-          {cart.map((pro) =>
-            <CartItemMobView key={pro._id} pro={pro} />
-          )}
+          <h2 className="pb-1.5 text-xl text-center text-black/75 border-b uppercase md:hidden">checkout</h2>
+          {cart.map((pro) => <CartItemMobView key={pro._id} pro={pro} />)}
         </article>
 
         <aside className='py-3 border-black md:w-1/3  md:pl-3  md:border-l'>
@@ -203,8 +193,6 @@ const Checkout = () => {
 
         </aside>
       </section>
-
-      <ScrollUpBtn open={btnScrollUpIsVisible} />
 
     </section>
   )
