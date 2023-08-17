@@ -16,9 +16,6 @@ const loginSlice = createSlice({
   initialState,
   reducers: {
     isLoginOpen: (state, action) => {
-      // const { accessToken } = action.payload
-      console.log({ res: action.payload });
-
       state.isOpen = action.payload
     },
   }

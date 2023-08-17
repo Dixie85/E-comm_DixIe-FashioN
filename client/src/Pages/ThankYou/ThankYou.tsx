@@ -6,10 +6,9 @@ import StarRating from '../../Components/StarRating/StarRating'
 
 const ThankYou = () => {
   const { state } = useLocation()
-  console.log(state);
   const navigate = useNavigate()
-
   const dispatch = useAppDispatch()
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
     if (state?.logingOut) dispatch(logOut(''))
@@ -54,10 +53,10 @@ const ThankYou = () => {
           )}
         </section>
         <section className='flex'>
-        <button className='my-7 py-2 px-3 m-auto' onClick={()=> navigate('/')}>
-          {`< Go back to `} {<b><span className="text-red-400" >Dixie</span> Fashion</b>}
-        </button>
-      </section>
+          <button className='my-7 py-2 px-3 m-auto' onClick={() => navigate('/')}>
+            {`< Go back to `} {<b><span className="text-red-400" >Dixie</span> Fashion</b>}
+          </button>
+        </section>
       </section>
     </main>
   )

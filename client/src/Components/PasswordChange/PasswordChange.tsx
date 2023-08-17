@@ -18,8 +18,6 @@ const PasswordChange = () => {
     isError,
     error
   }] = useVerifyPasswordResetLinkMutation()
-  console.log(error, 'error');
-
 
   useEffect(() => {
     if (isError) {

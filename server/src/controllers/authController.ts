@@ -35,12 +35,10 @@ export const login = asyncHandler(async (req, res): Promise<any> => {
 
     if (!foundUser.verified) {
         const token = await VerifyToken.findOne({ userId: foundUser._id, type: 'mail' }) as IVerifyToken
-        console.log({token});
 
         if (!token) {
             const mailTokenObject = { userId: foundUser._id, token: randomBytes(32).toString("hex"), type: 'mail' }
             const newToken = await VerifyToken.create(mailTokenObject) as IVerifyToken
-            console.log({newToken});
 
             const url = `${process.env.BASE_URL}mail/${foundUser._id}/verify/${newToken.token}`;
             const emailWasSend = await verifyEmail(foundUser.email, "Verify Email", url);
@@ -111,7 +109,6 @@ export const refresh = async (req: Request, res: Response) : Promise<any> => {
         process.env.REFRESH_TOKEN_SECRET as Secret,
         //@ts-ignore
         asyncHandler(async (err, decoded) => {
-          console.log(decoded ,'decoded');
           
             if (err) return res.status(403).json({ message: 'Forbidden' })
             //@ts-ignore

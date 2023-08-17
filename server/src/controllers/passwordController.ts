@@ -28,12 +28,10 @@ export const passwordResetLink = asyncHandler(async (req: Request, res: Response
   }
 
   const token = await VerifyToken.findOne({ userId: foundUser._id, type:'password' }) as IVerifyToken
-  console.log({token});
 
   if (!token) {
       const passwordTokenObject = { userId: foundUser._id, token: randomBytes(32).toString("hex"), type: 'password' }
       const newToken = await VerifyToken.create(passwordTokenObject) as IVerifyToken
-      console.log({newToken});
 
       const url = `${process.env.BASE_URL}password-reset/${newToken.userId}/${newToken.token}`;
       const emailWasSend = await verifyEmail(foundUser.email, "Verify Email", url);
@@ -48,7 +46,6 @@ export const passwordResetLink = asyncHandler(async (req: Request, res: Response
   const url = `${process.env.BASE_URL}password-reset/${token.userId}/${token.token}`;
   const emailWasSend = await verifyEmail(foundUser.email, "Password Reset", url);
   close()
-  console.log(emailWasSend, 'emailWasSend');
 
   if (emailWasSend.success) {
       return res.status(200).json({ message: `An email with reset password link was sent to your email address.`})
@@ -68,7 +65,6 @@ export const verifyPasswordResetLink = asyncHandler(async (req: Request, res: Re
   } 
 
   const foundUser = await connect(() => Users.findOne({ _id: id }).exec())
-  console.log(foundUser, "foundUser");
   
   if (!foundUser) {
     close();

@@ -20,7 +20,6 @@ const infoMessageSlice = createSlice({
   initialState,
   reducers: {
     isInfoMessageOpen: (state, action) => {
-      console.log(action.payload, 'isInfoMessageOpen');
       state.isMessageOpen = action.payload.isOpen
       state.message = action.payload.message
       state.isError = action.payload.isError

@@ -4,7 +4,6 @@ import { IDecoded } from "../interfaces/interfaces";
 
 const verifyJWT = (req: Request, res: Response, next: NextFunction): any => {
   const authHeader = req.headers.authorization || (req.headers.Authorization as string);
-  console.log(authHeader ,'authHeader - VerifyJWT');
   
 
   if (!authHeader?.startsWith("Bearer ")) {
@@ -12,7 +11,6 @@ const verifyJWT = (req: Request, res: Response, next: NextFunction): any => {
   }
 
   const token = authHeader.split(" ")[1] as string;
-  console.log(token ,'Token - VerifyJWT');
 
   jwt.verify(
     token,

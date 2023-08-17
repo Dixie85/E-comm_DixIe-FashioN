@@ -16,13 +16,13 @@ const ProductsByCategory = () => {
     window.scrollTo({ top: 0 });
   }, [])
 
-  useEffect(()=>{
-    if(Object.values(SUB_CATEGORIES).some(val => category === val)) {
+  useEffect(() => {
+    if (Object.values(SUB_CATEGORIES).some(val => category === val)) {
       return
     } else {
       navigate('/*')
     }
-  },[category, navigate])
+  }, [category, navigate])
 
   //replace with spiner
   if (products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
@@ -31,8 +31,6 @@ const ProductsByCategory = () => {
   const displayCategory =
     productsFilteredByGender
       .filter(product => product.category.toLowerCase() === category?.toLowerCase())
-  console.log(displayCategory)
-  console.log(category)
 
   return (
     <section className="flex flex-col items-center text-center min-h-screen font-[jossefin]">

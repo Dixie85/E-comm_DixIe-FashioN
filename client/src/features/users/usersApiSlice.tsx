@@ -36,9 +36,9 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
-                    console.log(data, 'passwordChange')
-                    const { message } = data
-                    console.log({ message });
+                    // console.log(data, 'passwordChange')
+                    // const { message } = data
+                    // console.log({ message });
 
 
                 } catch (err) {
@@ -55,9 +55,9 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
-                    console.log(data, 'passwordChange')
-                    const { message } = data
-                    console.log({ message });
+                    // console.log(data, 'passwordChange')
+                    // const { message } = data
+                    // console.log({ message });
 
                 } catch (err) {
                     console.log(err)
@@ -72,9 +72,9 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
-                    console.log(data, 'verifyPasswordResetLink')
-                    const { message } = data
-                    console.log({ message });
+                    // console.log(data, 'verifyPasswordResetLink')
+                    // const { message } = data
+                    // console.log({ message });
 
                 } catch (err) {
                     console.log(err)
@@ -90,9 +90,9 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
-                    console.log(data, 'Change canceled')
-                    const { message } = data
-                    console.log({ message });
+                    // console.log(data, 'Change canceled')
+                    // const { message } = data
+                    // console.log({ message });
                 } catch (err) {
                     console.log(err)
                 }

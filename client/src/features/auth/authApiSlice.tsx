@@ -32,7 +32,7 @@ export const authApiSlice = apiSlice.injectEndpoints({
           async onQueryStarted(arg, { dispatch, queryFulfilled }) {
               try {
                   const { data } = await queryFulfilled
-                  console.log(data, 'authApiSlice')
+                //   console.log(data, 'authApiSlice')
                   const { accessToken } = data
                   dispatch(setCredentials({ accessToken }))
               } catch (err) {
@@ -48,9 +48,9 @@ export const authApiSlice = apiSlice.injectEndpoints({
           async onQueryStarted(arg, { dispatch, queryFulfilled }) {
               try {
                   const { data } = await queryFulfilled
-                  console.log(data, 'emailVerify')
-                  const { message } = data
-                  console.log({message});
+                //   console.log(data, 'emailVerify')
+                //   const { message } = data
+                //   console.log({message});
                   
                   
               } catch (err) {

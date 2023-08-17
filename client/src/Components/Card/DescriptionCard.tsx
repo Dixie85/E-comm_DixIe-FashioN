@@ -28,7 +28,6 @@ const DescriptionCard = () => {
   if (products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
 
   const displayProduct = products.find(pro => pro._id === id)
-  console.log(displayProduct)
 
   const cartQuantity = Object.keys(displayProduct!.size)
     .reduce((obj, size): ISizes => {

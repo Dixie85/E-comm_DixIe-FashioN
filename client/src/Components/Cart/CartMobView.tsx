@@ -18,7 +18,6 @@ const CartMobView = ({openCartMobView, setOpenCartMobView}: ICartMobView) => {
   const [cartEmpty, setCartEmpty] = useState(false)
   const authToken = !!token
   const isDisebled = (cart.length > 0 && authToken)
-  console.log(cart);
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()

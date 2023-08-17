@@ -71,8 +71,6 @@ const Checkout = () => {
       navigate('/')
     } catch (error) {
       //@ts-ignore
-      console.log(error!.data.message);
-      //@ts-ignore
       infoMessage(error!.data.message, true)
     }
   }

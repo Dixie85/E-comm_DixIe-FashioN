@@ -30,7 +30,6 @@ export const createNewProduct = asyncHandler(async (req, res): Promise<any> => {
 
     // Check if product name exists 
     const duplicateProductName = await connect(() => Product.findOne({ name }).lean().exec()) as IProduct
-    console.log({duplicateProductName});
     if (duplicateProductName) {
         close()
         return res.status(409).json({ message: 'Product with this name already exists' })
@@ -41,7 +40,6 @@ export const createNewProduct = asyncHandler(async (req, res): Promise<any> => {
     // Create new product 
     const product = await connect(() => Product.create(productObject)) as IProduct
     close()
-    console.log({product});
 
     if (product) { //created 
         res.status(201).json({ message: `New product successfully created` })

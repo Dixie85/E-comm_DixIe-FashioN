@@ -29,11 +29,6 @@ const PasswordChangeForm = () => {
     isSuccess: isCancelPasswordSuccess,
   }] = useCancelPasswordChangeMutation()
 
-  //@ts-ignore
-  console.log(error?.data.message);
-
-  console.log({ password, validPassword });
-
   useEffect(() => {
     setValidPassword(PWD_REGEX.test(password))
   }, [password])
@@ -41,7 +36,6 @@ const PasswordChangeForm = () => {
   useEffect(() => {
     if (isSuccess && msg.length > 0) {
       setPassword('')
-      console.log(msg, "loging MSG");
       infoMessage(msg, false)
       navigate("/", { replace: true, state: { from: location } })
     }

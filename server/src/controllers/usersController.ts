@@ -54,7 +54,6 @@ export const createNewUser = asyncHandler(async (req, res): Promise<any> => {
 
     // Create and store new user 
     const user = await connect(() => Users.create(userObject)) as IUser
-    console.log({user});
     if (!user) {
         close()
         return res.status(400).json({ message: 'Invalid user data received' })
@@ -64,7 +63,6 @@ export const createNewUser = asyncHandler(async (req, res): Promise<any> => {
     const mailTokenObject = { userId: user._id, token: randomBytes(32).toString("hex"), type: 'mail' }
 
     const token = await connect(() => VerifyToken.create(mailTokenObject)) as IVerifyToken
-    console.log({token});
     close()
 
     //Url address provided to the user for verification

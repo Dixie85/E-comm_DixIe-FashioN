@@ -39,11 +39,11 @@ const setShippingPrice = (cart: ICartProduct[]) => {
   return 5.99
 }
 
-const totalCartQuantity = (cartQuantity: ISizes):number =>
-Object.values(cartQuantity)
-  .reduce((res, quan): number => {
-    return res += quan
-  }, 0)
+const totalCartQuantity = (cartQuantity: ISizes): number =>
+  Object.values(cartQuantity)
+    .reduce((res, quan): number => {
+      return res += quan
+    }, 0)
 
 export const cartSlice = createSlice({
   name: "cart",
@@ -67,15 +67,15 @@ export const cartSlice = createSlice({
       const size = action.payload.selectedSize
       const newCart = [...state.cart]
       //@ts-ignore
-      if(state.cart[productIndex].cartQuantity[size] < state.cart[productIndex].size[size])
-      newCart[productIndex] = {
-        ...newCart[productIndex],
-        cartQuantity: {
-          ...newCart[productIndex].cartQuantity,
-          //@ts-ignore
-          [size]: newCart[productIndex].cartQuantity[size] + 1
+      if (state.cart[productIndex].cartQuantity[size] < state.cart[productIndex].size[size])
+        newCart[productIndex] = {
+          ...newCart[productIndex],
+          cartQuantity: {
+            ...newCart[productIndex].cartQuantity,
+            //@ts-ignore
+            [size]: newCart[productIndex].cartQuantity[size] + 1
+          }
         }
-      }
       if (cartQuantity < findProduct?.stock!) state.cart = newCart
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)
@@ -87,18 +87,16 @@ export const cartSlice = createSlice({
       const size = action.payload.selectedSize
       const newCart = [...state.cart]
       //@ts-ignore
-      if(state.cart[productIndex].cartQuantity[size] > 0)
-      newCart[productIndex] = {
-        ...newCart[productIndex],
-        cartQuantity: {
-          ...newCart[productIndex].cartQuantity,
-          //@ts-ignore
-          [size]: newCart[productIndex].cartQuantity[size] - 1
+      if (state.cart[productIndex].cartQuantity[size] > 0)
+        newCart[productIndex] = {
+          ...newCart[productIndex],
+          cartQuantity: {
+            ...newCart[productIndex].cartQuantity,
+            //@ts-ignore
+            [size]: newCart[productIndex].cartQuantity[size] - 1
+          }
         }
-      }
-      console.log(newCart);
-      console.log(cartQuantity);
-      
+
       if (cartQuantity > 1) state.cart = newCart
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)

@@ -58,7 +58,6 @@ export const cancelOrder = asyncHandler(async (req, res): Promise<any> => {
     Order.updateOne({ _id }, { status: "canceled" }).lean().exec()
   );
   close();
-  console.log(findOrder);
 
   if (findOrder.matchedCount === 1) {
     //created
@@ -85,7 +84,6 @@ export const shippedOrder = asyncHandler(async (req, res): Promise<any> => {
     Order.updateOne({ orderNumber, status: 'pending' }, { status: "shipped" }).lean().exec()
   );
   close();
-  console.log(findOrder);
 
   if (findOrder.matchedCount === 1) {
     //created
@@ -145,10 +143,7 @@ export const newOrder = asyncHandler(async (req, res): Promise<any> => {
   close();
 
   if (order) {
-    const user = await connect(() => Users.findById(userId).select("-__v").exec())
-    console.log(user, 'user');
-    console.log(order, "order");
-    
+    const user = await connect(() => Users.findById(userId).select("-__v").exec())    
     close();
     // confirmaOrder( user.email, cart )
 

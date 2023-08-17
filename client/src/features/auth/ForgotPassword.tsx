@@ -33,7 +33,6 @@ const ForgotPassword = () => {
     e.preventDefault()
     try {
       const {message} = await requirePasswordChangeLink({ username }).unwrap()
-      console.log( message );
       infoMessage(message, false)
       setUsername('')
       dispatch(isForgotPasswordOpen(false))

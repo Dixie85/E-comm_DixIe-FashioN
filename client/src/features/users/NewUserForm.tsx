@@ -18,8 +18,6 @@ const NewUserForm = () => {
     isError,
     error
   }] = useAddNewUserMutation()
-  //@ts-ignore
-  console.log(error?.data.message);
 
   const navigate = useNavigate()
 
