@@ -1,7 +1,6 @@
 import { Order } from "../models/Orders";
 import asyncHandler from "express-async-handler";
 import { connect, close } from "../../db/mongo.config";
-
 import nodemailer from "nodemailer";
 import Mailgen from "mailgen";
 import { IProductSizes } from "../interfaces/interfaces";
@@ -99,52 +98,12 @@ export const shippedOrder = asyncHandler(async (req, res): Promise<any> => {
 });
 
 
-// // @desc Create new order
-// // @route POST /order
-// // @access Private
-// export const newOrder = asyncHandler(async (req, res): Promise<any> => {
-//   const { deliveryAddress, sum, userId} = req.body;
-  
-//   // Confirm data
-//   if (!deliveryAddress || !sum || !userId) {
-//     return res.status(400).json({ message: "Data is missing" });
-//   }
-
-//   // Find total nuber of orders
-//   const orderNumber = await connect(() => Order.count().lean().exec());
-
-//   const orderObject = {
-//     deliveryAddress,
-//     sum,
-//     orderNumber: (orderNumber + 1),
-//     userRef: userId,
-//   };
-
-//   // Create new order
-//   const order = await connect(() => Order.create(orderObject));
-//   close();
-//   if (order) {
-//     //created
-//     res.status(201).json({ message: `A new order was made`, order });
-//   } else {
-//     res.status(400).json({ message: "Invalid user data received" });
-//   }
-// });
-
 // @desc Create new order
 // @route POST /order
 // @access Private
 export const newOrder = asyncHandler(async (req, res): Promise<any> => {
   const { fullName ,deliveryAddress, sum, userId, cart } = req.body; // error
   
-  //For testing !!!
-  // if (!error) { 
-  //   //created
-  //   return res.status(201).json({ message: `A confirmation and details about your order will arrive on your email shortly` });
-  // } else {
-  //   return res.status(400).json({ message: "Invalid user data received" });
-  // }
-
   // Confirm data
   if (!fullName || !deliveryAddress || !sum || !userId || !cart) {
     return res.status(400).json({ message: "Data is missing" });
@@ -207,7 +166,7 @@ export const newOrder = asyncHandler(async (req, res): Promise<any> => {
       theme: "cerberus",
       product: {
         name: "DixIe FashioN",
-        link: "http://localhost:3000/",
+        link: process.env.BASE_URL as string,
       },
     });
   
@@ -275,7 +234,7 @@ export const sendOrderBill = asyncHandler(async (req, res): Promise<any> => {
     theme: "default",
     product: {
       name: "DixIe FashioN",
-      link: "http://localhost:3000/",
+      link: process.env.BASE_URL as string,
     },
   });
 
@@ -315,55 +274,4 @@ export const sendOrderBill = asyncHandler(async (req, res): Promise<any> => {
     .catch((error: any) => {
       return res.status(500).json({ error });
     });
-
-  // res.status(201).json("getBill Successfully...!");
 });
-
-// async function confirmaOrder (userEmail: any, cart: { name: any; description: any; price: any; }[]) {
-//   let config = {
-//     service: "gmail",
-//     auth: {
-//       user: process.env.G_EMAIL,
-//       pass: process.env.G_PASSWORD,
-//     },
-//   };
-
-//   let transporter = nodemailer.createTransport(config);
-
-//   let MailGenerator = new Mailgen({
-//     theme: "default",
-//     product: {
-//       name: "DixIe FashioN",
-//       link: "http://localhost:3000/",
-//     },
-//   });
-
-//   let response = {
-//     body: {
-//       name: "Dixie Dev",
-//       intro: "Your bill has arrived!",
-//       table: {
-//         data: cart.map((pro: { name: any; description: any; price: any; }) => {
-//           return {
-//           item: pro.name,
-//           description: pro.description,
-//           price: pro.price,}
-//         })
-//       },
-//       outro: "Looking forward to do more business",
-//     },
-//   };
-
-//   let mail = MailGenerator.generate(response);
-
-//   let message = {
-//     from: process.env.G_EMAIL,
-//     to: userEmail,
-//     subject: "Place Order",
-//     html: mail,
-//   };
-
-//   transporter.sendMail(message)
-  
-//   return
-// }
