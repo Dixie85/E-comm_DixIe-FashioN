@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../Assets/Images/Logo12.png";
-// import Button from "../Button/Button";
 import NavLinks from "./NavLinks";
 import IonIcon from '@reacticons/ionicons';
 import Cart from "../Cart/Cart";

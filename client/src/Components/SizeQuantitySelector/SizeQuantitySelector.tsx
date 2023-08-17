@@ -7,7 +7,6 @@ interface ISizeQuantitySelector {
   sizes: ISizes,
   id: string,
   isCart?: boolean
-
 }
 
 const SizeQuantitySelector = ({ sizes, id, isCart }: ISizeQuantitySelector) => {

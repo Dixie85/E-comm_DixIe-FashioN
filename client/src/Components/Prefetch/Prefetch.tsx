@@ -9,13 +9,12 @@ const Prefetch = () => {
     const products = store.dispatch(productApiSlice.endpoints.getProducts.initiate(''))
 
     return () => {
-        console.log('unsubscribing')
-        products.unsubscribe()
-
+      console.log('unsubscribing')
+      products.unsubscribe()
     }
-}, [])
+  }, [])
 
-return <Outlet />
+  return <Outlet />
 }
 
 export default Prefetch

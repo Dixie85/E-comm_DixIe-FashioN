@@ -32,7 +32,7 @@ const StarRating = ({starCount}:IStarRating) => {
             onClick={() => handleClick(index + 1)}
             onMouseOver={() => handleMouseOver(index + 1)}
             onMouseLeave={handleMouseLeave}
-            className={`pr-2 cursor-pointer text-${(hoverValue || currentValue) > index ? 'rose-300' : 'black/70'}`}
+            className={`pr-2 cursor-pointer text-${(hoverValue || currentValue) > index ? 'red-300' : 'black/30'}`}
           />
         )
       })}

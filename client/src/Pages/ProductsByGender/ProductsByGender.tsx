@@ -16,17 +16,16 @@ const ProductsByGender = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [])
-   
-  useEffect(()=>{
-    if(Object.values(GENDER).some(val => gender === val)) {
+
+  useEffect(() => {
+    if (Object.values(GENDER).some(val => gender === val)) {
       return
     } else {
       navigate('/*')
     }
-  },[gender, navigate])
-  
-  //replace with spiner
-  if(products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
+  }, [gender, navigate])
+
+  if (products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
 
   const productsFilteredByGender = products.filter(pro => gender?.toLowerCase() === "men" ? pro.gender === "male" : pro.gender === "female")
   const productsFilteredByCategory = productsFilteredByGender.filter(pro => filterByCategory === 'all' ? pro : pro.category === filterByCategory && pro)

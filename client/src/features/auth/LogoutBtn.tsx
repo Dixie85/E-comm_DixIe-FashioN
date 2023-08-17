@@ -10,7 +10,6 @@ const LogoutBtn = () => {
     const navigate = useNavigate()
 
     const [sendLogout, {
-        // isLoading,
         isSuccess,
     }] = useSendLogoutMutation()
 

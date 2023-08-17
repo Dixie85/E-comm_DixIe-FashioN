@@ -28,7 +28,7 @@ const PasswordChangeForm = () => {
     isLoading: isCancelPasswordLoading,
     isSuccess: isCancelPasswordSuccess,
   }] = useCancelPasswordChangeMutation()
-  
+
   //@ts-ignore
   console.log(error?.data.message);
 
@@ -54,7 +54,7 @@ const PasswordChangeForm = () => {
   }
 
   useEffect(() => {
-    if(isCancelPasswordSuccess){
+    if (isCancelPasswordSuccess) {
       navigate('/')
     }
   }, [isCancelPasswordSuccess, navigate])
@@ -81,7 +81,6 @@ const PasswordChangeForm = () => {
   return (
     <section className='max-w-[1440px] m-auto font-[jossefin]'>
       <article className="relative flex h-screen bg-Hero bg-cover font-[Josefin] md:bg-top bg-center">
-        {/* <div className='m-auto'> */}
 
         <section className="fixed flex h-screen w-screen bg-black/70 z-50">
 
@@ -91,7 +90,6 @@ const PasswordChangeForm = () => {
             </header>
             <main className=" mt-4 h-full">
               <form className="flex flex-col text-gray-600/90" onSubmit={handleSaveChangePassword}>
-
 
                 <label htmlFor="password">Password:</label>
                 <input
@@ -142,11 +140,6 @@ const PasswordChangeForm = () => {
           </div>
         </section>
 
-
-
-
-
-        {/* </div> */}
       </article>
     </section>
   )

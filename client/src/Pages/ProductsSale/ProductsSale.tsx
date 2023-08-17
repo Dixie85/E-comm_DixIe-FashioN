@@ -13,9 +13,8 @@ const ProductsSale = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [])
-  
-  //replace with spiner
-  if(products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
+
+  if (products.length < 1) return <section className="flex text-center min-h-screen"><div className="m-auto"><Spiner /></div></section>
 
   const productsFilteredByGender = products.filter(pro => filterByGender?.toLowerCase() === "female" ? pro.gender === "female" : pro.gender === "male")
   const productsFilteredByCategory = productsFilteredByGender.filter(pro => filterByCategory === 'all' ? pro : pro.category === filterByCategory && pro)
@@ -39,9 +38,9 @@ const ProductsSale = () => {
         <div className="mt-4">
           {categories.map(category => <span key={category} className={`mr-6 text-xl capitalize cursor-pointer transform duration-200 ${category === filterByCategory ? 'text-red-400 underline' : ''} `} onClick={() => setFilterByCategory(category)}>{category}</span>)}
           <div className="mt-3 text-xl capitalize">
-            <button className={`${filterByGender === 'female' ? 'text-red-400 underline' : ''}`} onClick={()=>setFilterByGender('female')}>woman</button>
+            <button className={`${filterByGender === 'female' ? 'text-red-400 underline' : ''}`} onClick={() => setFilterByGender('female')}>woman</button>
             <span> / </span>
-            <button className={`${filterByGender === 'male' ? 'text-red-400 underline' : ''}`} onClick={()=>setFilterByGender('male')}>man</button>
+            <button className={`${filterByGender === 'male' ? 'text-red-400 underline' : ''}`} onClick={() => setFilterByGender('male')}>man</button>
           </div>
         </div>
       </div>

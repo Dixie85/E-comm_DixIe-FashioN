@@ -24,5 +24,3 @@ const InfoMessage = () => {
 }
 
 export default InfoMessage
-
-//transform duration-200 

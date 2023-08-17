@@ -5,7 +5,6 @@ import usePersist from '../../hooks/usePersist'
 import IonIcon from '@reacticons/ionicons'
 import { useAppDispatch } from '../../redux/redux.hooks'
 import { isLoginOpen } from '../../redux/slices/auth/loginSlice'
-import { Link } from 'react-router-dom'
 import { isRegisterOpen } from '../../redux/slices/auth/registerSlice'
 import Spiner from '../../Assets/Spiners/Spiner'
 import { isForgotPasswordOpen } from '../../redux/slices/auth/forgotPasswordSlice'
@@ -13,7 +12,6 @@ import { isForgotPasswordOpen } from '../../redux/slices/auth/forgotPasswordSlic
 const Login = () => {
   const userRef = useRef<HTMLInputElement>(null)
   const errRef = useRef<HTMLInputElement>(null)
-  // const signUpShowBtn = useRef(false)
   const [signUpShowBtn, setSignUpShowBtn] = useState(false)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -52,7 +50,6 @@ const Login = () => {
         setErrMsg(err.data?.message);
       } else if (err.status === 401) {
         if (err.data?.signUp) {
-          // signUpShowBtn.current = true
           setSignUpShowBtn(() => err.data?.signUp)
         }
         setErrMsg(err.data?.message);
@@ -75,7 +72,6 @@ const Login = () => {
     dispatch(isLoginOpen(false))
     dispatch(isRegisterOpen(true))
   }
-
 
   return (
     <section className="fixed flex h-screen w-screen bg-black/70 z-50">

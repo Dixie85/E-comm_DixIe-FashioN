@@ -21,7 +21,6 @@ const CartItem = ({ pro, isCart }: ICartItem) => {
   return (
     <article className='flex flex-col px-2 py-5 border-b'>
       <div className='flex flex-1 flex-col px-1 justify-between'>
-        {/* {isCart && <p>Quantity: {sumCartQuantity} {sumCartQuantity === 0 && <span className="inline-flex text-base text-red-500">choose size <IonIcon name='warning-outline' className=" self-center" /></span>}</p>} */}
         <div className="flex justify-between">
           <img src={pro.image} alt={pro.name} className="pr-1 w-[70px] max-h-24 rounded-3xl" />
           <div className="flex">

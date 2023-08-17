@@ -1,19 +1,3 @@
-// import { IProduct } from "../../Interfaces/Interfaces"
-// import { apiSlice } from "../../app/api/apiSlice"
-
-// export const productApiSlice = apiSlice.injectEndpoints({
-//     endpoints: builder => ({
-//         getProducts: builder.query<IProduct[], string>({
-//             query: () => '/product',
-//             providesTags: [{ type: 'Product', id: 'LIST' }],
-//         }),
-//     }),
-// })
-
-// export const {
-//     useGetProductsQuery,
-// } = productApiSlice
-
 import { IProduct } from "../../Interfaces/Interfaces"
 import { apiSlice } from "../../app/api/apiSlice"
 import {
@@ -28,10 +12,6 @@ const initialState = productsAdapter.getInitialState()
 export const productApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
         getProducts: builder.query<IProduct[], any>({
-            // query: () => '/product',
-            // validateStatus: (response: { status: number; }, result: { isError: any; }) => {
-            //     return response.status === 200 && !result.isError
-            // },
             query: () => ({
                 url: '/product',
                 validateStatus: (response, result) => {

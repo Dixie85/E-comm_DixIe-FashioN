@@ -1,4 +1,3 @@
-import React from 'react'
 import LoginBtn from '../../features/auth/LoginBtn'
 import LogoutBtn from '../../features/auth/LogoutBtn'
 import RegisterBtn from '../../features/auth/RegisterBtn'

@@ -1,5 +1,5 @@
 import { apiSlice } from "../../app/api/apiSlice"
-import { logOut, setCredentials } from "../../redux/slices/auth/authSlice"
+import { setCredentials } from "../../redux/slices/auth/authSlice"
 
 export const authApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
@@ -17,10 +17,7 @@ export const authApiSlice = apiSlice.injectEndpoints({
             }),
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
-                    //const { data } = 
                     await queryFulfilled
-                    //console.log(data)
-                    // dispatch(logOut(''))
                     dispatch(apiSlice.util.resetApiState())
                 } catch (err) {
                     console.log(err)

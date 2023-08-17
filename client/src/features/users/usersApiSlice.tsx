@@ -28,19 +28,19 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             }),
         }),
         requirePasswordChangeLink: builder.mutation({
-            query: ({username}) => ({
+            query: ({ username }) => ({
                 url: `/user/password-reset`,
                 method: 'POST',
-                body: {username}
+                body: { username }
             }),
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
                     console.log(data, 'passwordChange')
                     const { message } = data
-                    console.log({message});
-                    
-                    
+                    console.log({ message });
+
+
                 } catch (err) {
                     console.log(err)
                 }
@@ -50,16 +50,15 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             query: (body) => ({
                 url: `/user/password-reset/${body.id}/${body.token}`,
                 method: 'POST',
-                body: {password: body.password}
+                body: { password: body.password }
             }),
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
                     console.log(data, 'passwordChange')
                     const { message } = data
-                    console.log({message});
-                    
-                    
+                    console.log({ message });
+
                 } catch (err) {
                     console.log(err)
                 }
@@ -75,26 +74,25 @@ export const usersApiSlice = apiSlice.injectEndpoints({
                     const { data } = await queryFulfilled
                     console.log(data, 'verifyPasswordResetLink')
                     const { message } = data
-                    console.log({message});
-                    
-                    
+                    console.log({ message });
+
                 } catch (err) {
                     console.log(err)
                 }
             }
         }),
         cancelPasswordChange: builder.mutation({
-            query: ({token}) => ({
+            query: ({ token }) => ({
                 url: `/user/password-reset`,
                 method: 'DELETE',
-                body: {token}
+                body: { token }
             }),
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
                     console.log(data, 'Change canceled')
                     const { message } = data
-                    console.log({message});
+                    console.log({ message });
                 } catch (err) {
                     console.log(err)
                 }
