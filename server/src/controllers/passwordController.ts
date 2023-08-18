@@ -33,7 +33,7 @@ export const passwordResetLink = asyncHandler(async (req: Request, res: Response
       const passwordTokenObject = { userId: foundUser._id, token: randomBytes(32).toString("hex"), type: 'password' }
       const newToken = await VerifyToken.create(passwordTokenObject) as IVerifyToken
 
-      const url = `${process.env.BASE_URL}password-reset/${newToken.userId}/${newToken.token}`;
+      const url = `${process.env.BASE_URL}/password-reset/${newToken.userId}/${newToken.token}`;
       const emailWasSend = await verifyEmail(foundUser.email, "Verify Email", url);
       close()
 
@@ -43,7 +43,7 @@ export const passwordResetLink = asyncHandler(async (req: Request, res: Response
           res.json({ message: emailWasSend.error })
       }
   }
-  const url = `${process.env.BASE_URL}password-reset/${token.userId}/${token.token}`;
+  const url = `${process.env.BASE_URL}/password-reset/${token.userId}/${token.token}`;
   const emailWasSend = await verifyEmail(foundUser.email, "Password Reset", url);
   close()
 

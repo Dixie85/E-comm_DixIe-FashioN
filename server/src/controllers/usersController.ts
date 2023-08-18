@@ -67,7 +67,7 @@ export const createNewUser = asyncHandler(async (req, res): Promise<any> => {
 
     //Url address provided to the user for verification
     //this url will hit a front end route
-    const url = `${process.env.BASE_URL}mail/${user._id}/verify/${token.token}`;
+    const url = `${process.env.BASE_URL}/mail/${user._id}/verify/${token.token}`;
  
     const emailWasSend = await verifyEmail(user.email, "Verify Email", url);
 

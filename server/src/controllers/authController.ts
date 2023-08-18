@@ -40,7 +40,7 @@ export const login = asyncHandler(async (req, res): Promise<any> => {
             const mailTokenObject = { userId: foundUser._id, token: randomBytes(32).toString("hex"), type: 'mail' }
             const newToken = await VerifyToken.create(mailTokenObject) as IVerifyToken
 
-            const url = `${process.env.BASE_URL}mail/${foundUser._id}/verify/${newToken.token}`;
+            const url = `${process.env.BASE_URL}/mail/${foundUser._id}/verify/${newToken.token}`;
             const emailWasSend = await verifyEmail(foundUser.email, "Verify Email", url);
             close()
 
@@ -51,7 +51,7 @@ export const login = asyncHandler(async (req, res): Promise<any> => {
             }
         }
 
-        const url = `${process.env.BASE_URL}mail/${token.userId}/verify/${token.token}`;
+        const url = `${process.env.BASE_URL}/mail/${token.userId}/verify/${token.token}`;
         const emailWasSend = await verifyEmail(foundUser.email, "Verify Email", url);
         close()
 
