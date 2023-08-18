@@ -127,7 +127,7 @@ const Checkout = () => {
           </section>
 
           <section className="border shadow">
-            <h2 className="uppercase tracking-widest py-1 pl-2 bg-rose-50" >credentials & shepping detailes</h2>
+            <h2 className="uppercase tracking-widest py-1 pl-2 bg-rose-50" >credentials & shipping details</h2>
             <form className="flex flex-col px-2.5 pb-3 text-gray-600/90" onSubmit={(e => handleSubmit(e))}>
 
               <label htmlFor="firstName" className="mt-1">First name: </label>

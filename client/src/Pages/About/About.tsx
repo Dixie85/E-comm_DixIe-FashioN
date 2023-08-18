@@ -20,7 +20,7 @@ const About = () => {
       <section className="px-5 text-lg max-w-4xl m-auto">
 
         <section className="text-center mb-5">
-          <p><b><span className="text-red-400" >Dixie</span> Fashion</b> is created from original ideas inspired by today's modern web development. Experience an easy-to use e-commerce web application, equipped with many different custom made tools and components. Take your time and check all included security features.</p>
+          <p><b><span className="text-red-400" >Dixie</span> Fashion</b> is created from original ideas inspired by today's modern web development. Experience an easy-to use e-commerce web application, equipped with many different custom made tools and components. Take your time and check all included security features. You don't want to miss a step! Go through the whole process from registering to signing out from the applications, with many interesting features to see and experience in between.</p>
         </section>
 
         <section className="pb-3 ">
