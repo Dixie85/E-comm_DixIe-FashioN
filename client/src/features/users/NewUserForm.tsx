@@ -5,6 +5,7 @@ import IonIcon from "@reacticons/ionicons"
 import { useAppDispatch } from "../../redux/redux.hooks"
 import { isRegisterOpen } from "../../redux/slices/auth/registerSlice"
 import Spiner from "../../Assets/Spiners/Spiner"
+import useInfoMessage from "../../hooks/useInfoMessage"
 
 const USER_REGEX = /^[A-z]{3,20}$/
 const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
@@ -29,6 +30,7 @@ const NewUserForm = () => {
   const [validEmail, setValidEmail] = useState(false)
 
   const dispatch = useAppDispatch()
+  const [infoMessage] = useInfoMessage()
 
   useEffect(() => {
     setValidUsername(USER_REGEX.test(username))
@@ -49,7 +51,7 @@ const NewUserForm = () => {
       setEmail('')
       dispatch(isRegisterOpen(false))
     }
-  }, [dispatch, isSuccess, navigate])
+  }, [dispatch, infoMessage, isSuccess, navigate])
 
   const onUsernameChanged = (e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)
   const onPasswordChanged = (e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)
@@ -61,7 +63,9 @@ const NewUserForm = () => {
   const onSaveUserClicked = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (canSave) {
-      await addNewUser({ username, password, email })
+      const  res  = await addNewUser({ username, password, email })
+      //@ts-ignore
+      infoMessage(res.data.message, false)
     }
   }
 
