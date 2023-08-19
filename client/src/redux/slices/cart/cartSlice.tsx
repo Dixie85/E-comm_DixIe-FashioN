@@ -43,22 +43,28 @@ const totalCartQuantity = (cartQuantity: ISizes): number =>
   Object.values(cartQuantity)
     .reduce((res, quan): number => {
       return res += quan
-    }, 0)
+    }, 0
+)
+
+const getCartLocalStorage = () => JSON.parse(localStorage.getItem("cart") || JSON.stringify(initialState)) as ICartState;
+const setCartLocalStorage = (data: ICartState) => localStorage.setItem("cart", JSON.stringify(data));
 
 export const cartSlice = createSlice({
   name: "cart",
-  initialState,
+  initialState: getCartLocalStorage(),
   reducers: {
     addTocart: (state, action: PayloadAction<ICartProduct>) => {
       state.cart = [...state.cart, action.payload]
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)
+      setCartLocalStorage(state)
     },
     removeFromCart: (state, action: PayloadAction<ICartProduct>) => {
       const newCart = state.cart.filter(pro => pro._id !== action.payload._id)
       state.cart = newCart
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)
+      setCartLocalStorage(state)
     },
     addQuantity: (state, action: PayloadAction<ICartAddRemoveProduct>) => {
       const findProduct = state.cart.find(pro => pro._id === action.payload._id)
@@ -79,6 +85,7 @@ export const cartSlice = createSlice({
       if (cartQuantity < findProduct?.stock!) state.cart = newCart
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)
+      setCartLocalStorage(state)
     },
     subtractQuantity: (state, action: PayloadAction<ICartAddRemoveProduct>) => {
       const findProduct = state.cart.find(pro => pro._id === action.payload._id)
@@ -100,11 +107,13 @@ export const cartSlice = createSlice({
       if (cartQuantity > 1) state.cart = newCart
       state.total = Number(total(state.cart))
       state.shipping = setShippingPrice(state.cart)
+      setCartLocalStorage(state)
     },
     resetCart: (state) => {
       state.cart = [...initialState.cart]
       state.total = initialState.total
       state.shipping = initialState.shipping
+      setCartLocalStorage(state)
     },
   },
 
