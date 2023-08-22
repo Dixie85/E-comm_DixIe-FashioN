@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { IProduct } from "../../../Interfaces/Interfaces";
 
 // Defineing a type for the ProductsSlice state
@@ -14,15 +14,15 @@ const initialState: IProductsState = {
 export const fetchProducts = createAsyncThunk(
   "person/fetch",
   async (thunkAPI) => {
-    const response = await fetch("http://localhost:8080/api/products", {
+    const response = await fetch("http://localhost:8080/product", {       //change with ENV
       method: "GET",
     });
-    const data = response.json();    
+    const data = response.json();
     return data;
   },
 );
 
-export const counterSlice = createSlice({
+export const productsSlice = createSlice({
   name: "products",
   initialState,
   reducers: {},
@@ -33,5 +33,4 @@ export const counterSlice = createSlice({
   }
 });
 
-// export const { increment, decrement, incrementByAmount } = counterSlice.actions;
-export default counterSlice.reducer;
+export default productsSlice.reducer;

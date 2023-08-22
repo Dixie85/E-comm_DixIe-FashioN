@@ -6,9 +6,9 @@ export const links = [
       {
         Head: "Topwear",
         sublink: [
-          { name: "Shirt", link: "products/men/shirts" },
-          { name: "Blouse", link: "products/men/blouses" },
-          { name: "Jacket", link: "products/men/jackets" },
+          { name: "Shirts", link: "products/men/shirts" },
+          { name: "Blouses", link: "products/men/blouses" },
+          { name: "Jackets", link: "products/men/jackets" },
         ],
       },
       {
@@ -28,9 +28,9 @@ export const links = [
       {
         Head: "Topwear",
         sublink: [
-          { name: "Shirt", link: "products/women/shirts" },
-          { name: "Blouse", link: "products/women/blouses" },
-          { name: "Jacket", link: "products/women/jackets" },
+          { name: "Shirts", link: "products/women/shirts" },
+          { name: "Blouses", link: "products/women/blouses" },
+          { name: "Jackets", link: "products/women/jackets" },
         ],
       },
       {

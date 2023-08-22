@@ -7,22 +7,32 @@
     "compile": "tsc *.ts --outDir js",
     "compile:watch": "npm run compile -- --watch *.ts",
     "test": "jest --watch --silent",
-    "dev": "nodemon server.ts"
+    "dev": "nodemon --files server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/nodemailer": "^6.4.7",
     "axios": "^1.2.3",
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.8.4"
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mailgen": "^2.0.27",
+    "mongoose": "^6.8.4",
+    "nodemailer": "^6.9.1"
   },
   "devDependencies": {
-    "@types/express": "^4.17.13",
     "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.13",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
     "@types/supertest": "^2.0.12",

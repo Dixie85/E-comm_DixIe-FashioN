@@ -12,12 +12,14 @@
     "noUncheckedIndexedAccess": true,
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["./src/*"]
+      "@src/*": ["./src/*"],
+      // "custom-module-type": ["types/express"]
     },
     "esModuleInterop": true,
     "inlineSources": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "useUnknownInCatchVariables": false
+    "useUnknownInCatchVariables": false,
+    // "typeRoots": ["src/@types", "./node_modules/@types"]
   }
 }

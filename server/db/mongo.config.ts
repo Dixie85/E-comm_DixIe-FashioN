@@ -15,7 +15,9 @@ const connect = async <T>(cb: T) => {
 };
 
 const close = async () => {
-  mongoose.connection.close(() => console.log("info:", "closing conneciton"));
+  setTimeout(() => {
+    mongoose.connection.close(() => console.log("info:", "closing conneciton"));
+  },5000)
   return;
 };
 

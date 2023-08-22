@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./links";
 import IonIcon from '@reacticons/ionicons';
@@ -11,7 +11,7 @@ const NavLinks = () => {
       {links.map((link, i) => (
         <div key={i}>
           <div className="px-3 text-left md:cursor-pointer group">
-            <Link to={`/${link.name.toLowerCase()}`} >
+            <Link to={`category/${link.name.toLowerCase()}`} >
               <h1
                 className="py-7 flex justify-between items-center md:pr-0 pr-5 group hover:text-danger"
                 onClick={() => {
@@ -33,7 +33,7 @@ const NavLinks = () => {
             </Link>
             {link.submenu && (
               <div>
-                <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
+                <div className="absolute top-20 hidden group-hover:md:block hover:md:block shadow-lg">
                   <div className="py-3">
                     <div
                       className="w-4 h-4 left-3 absolute 
